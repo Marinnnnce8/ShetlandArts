@@ -12,7 +12,7 @@ $font-default: 'Barlow Semi Condensed', sans-serif;
 $font-alt: 'Barlow Condensed', sans-serif;
 
 // Size
-$font-size: 16px;
+$font-size: 20px;
 
 // Weight
 $light: 300;
@@ -21,20 +21,21 @@ $medium: 500;
 $bold: 700;
 
 // Line Height
-$line-height: 1.5;
+$line-height: 1.7;
 
 
 //
 // Colours
 //
 $white: #fff;
-$black: #241d1e;
-$primary: #1e87f0;
+$black: #000;
+$primary: #cb3132;
 $secondary: $black;
 $success: #32d296;
 $warning: #faa05a;
-$danger: #f0506e;
-$grey: lighten($black, 32%);
+$danger: $primary;
+$red: #a60001;
+$grey: lighten($black, 40%);
 $light-grey: lighten($grey, 32%);
 $off-white: lighten($light-grey, 20%);
 

@@ -4,18 +4,29 @@
 
 	<p>Lorem ipsum dolor sit amet, <strong>here's some bold text</strong>. Aliquam at ligula <em>here's some italic text</em>. Nulla facilisi. In in turpis non eros vehicula adipiscing in <em><strong>feugiat ligula</strong></em>. Vivamus et nulla<sub>2</sub> ultricies<sup>2</sup>, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna <a href="#">example link</a>. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
 
+	{{/inline}}
+{{/content}}
+
+{{#> content size="large"}}
+	{{#*inline "body"}}
 	<figure class="align_center hidpi">
 		<a href="{{aws}}/img/placeholder-castle-banner.jpg">
-			<img alt="This is a centre aligned image" src="{{aws}}/img/placeholder-castle-banner.jpg" width="960"/>
+			<img alt="This is a centre aligned image" src="./img/image-center.png" width="1200" height="460"/>
 		</a>
 		<figcaption>This is a centred image</figcaption>
 	</figure>
+
+	{{/inline}}
+{{/content}}
+
+{{#> content}}
+	{{#*inline "body"}}	
 
 	<h2>Heading h2</h2>
 
 	<figure class="align_right hidpi">
 		<a href="{{aws}}/img/placeholder-columns.jpg">
-			<img alt="This is a right aligned image" src="{{aws}}/img/placeholder-columns.300x0-is-hidpi.jpg" width="300"/>
+			<img alt="This is a right aligned image" src="./img/image-right.png" width="373" height="250"/>
 		</a>
 		<figcaption>This is a right-aligned image</figcaption>
 	</figure>
@@ -26,7 +37,7 @@
 
 	<figure class="align_left hidpi">
 		<a href="{{aws}}/img/placeholder-city.jpg">
-			<img alt="This is a left aligned image" src="{{aws}}/img/placeholder-city.300x0-is-hidpi.jpg" width="300"/>
+			<img alt="This is a left aligned image" src="./img/image-left.png" width="373" height="250"/>
 		</a>
 		<figcaption>This is a left-aligned image</figcaption>
 	</figure>
@@ -50,7 +61,7 @@
 	{{/inline}}
 {{/content}}
 
-{{> gallery items=items.gallery title="Gallery" caption="A Gallery Caption"}}
+{{> gallery items=items.gallery title="Gallery" caption="A Gallery Caption" size="xlarge"}}
 
 {{#> content}}
 	{{#*inline "body"}}
@@ -174,29 +185,29 @@
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Primary</div>
-			{{> ukButton label=cta style="primary"}}
+			{{> ukButton label="Button Normal" style="primary" icon="arrow-right"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Primary Small</div>
-			{{> ukButton label=cta style="primary" size="small"}}
+			{{> ukButton label="Button Small" style="primary" icon="arrow-right" size="small"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Primary Large</div>
-			{{> ukButton label=cta style="primary" size="large"}}
-		</div>
-
-		<div>
-			<div class="uk-text-meta uk-form-label">Secondary</div>
-			{{> ukButton label=cta style="secondary"}}
-			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Small</div>
-			{{> ukButton label=cta style="secondary" size="small"}}
-			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Large</div>
-			{{> ukButton label=cta style="secondary" size="large"}}
+			{{> ukButton label="Button Large" style="primary" icon="arrow-right" size="large"}}
 		</div>
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Default</div>
-			{{> ukButton label=cta}}
+			{{> ukButton label="Button Normal" icon="arrow-right-long"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Default Small</div>
-			{{> ukButton label=cta size="small"}}
+			{{> ukButton label="Button Small" size="small" icon="arrow-right-long"}}
 			<div class="uk-text-meta uk-form-label uk-margin-top">Default Large</div>
-			{{> ukButton label=cta size="large"}}
+			{{> ukButton label="Button Large" size="large" icon="arrow-right-long"}}
+		</div>
+		
+		<div>
+			<div class="uk-text-meta uk-form-label">Secondary</div>
+			{{> ukButton label="Button Normal" style="secondary" icon="arrow-right"}}
+			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Small</div>
+			{{> ukButton label="Button Small" style="secondary" size="small" icon="arrow-right"}}
+			<div class="uk-text-meta uk-form-label uk-margin-top">Secondary Large</div>
+			{{> ukButton label="Button Large" style="secondary" size="large" icon="arrow-right"}}
 		</div>
 
 		{{/inline}}
@@ -208,18 +219,13 @@
 		{{#*inline "cells"}}
 
 		<div>
-			<div class="uk-text-meta uk-form-label">Danger</div>
-			{{> ukButton label=cta style="danger"}}
-		</div>
-
-		<div>
 			<div class="uk-text-meta uk-form-label">Text Normal</div>
-			{{> ukButton label=cta style="text"}}
+			{{> ukButton label="Button Link Normal" style="text" icon="arrow-right-long"}}
 		</div>
 
 		<div>
 			<div class="uk-text-meta uk-form-label">Text Large</div>
-			{{> ukButton label=cta style="text" class="uk-text-large"}}
+			{{> ukButton label="Button Link Normal" style="text" class="uk-text-large" icon="arrow-right-long"}}
 		</div>
 
 		{{/inline}}

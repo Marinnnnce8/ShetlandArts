@@ -21,8 +21,9 @@
 
 // Image caption
 @mixin image-caption {
-	font-size: 0.8rem;
-	padding: $global-small-margin;
+	font-size: 14px;
+	color: $grey;
+	padding: 0 0 $global-small-margin;
 	text-align: center;
 }
 
