@@ -53,7 +53,7 @@
 	<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna example link. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
 
 	<blockquote>
-		<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui. Duis at eros magna <a href="#">example link</a>. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent rutrum arcu eget tortor cursus rutrum.</p>
+		<p>“Blockquote. Style to be good must be clear. Clearness is secured by using words that are current and ordinary.”</p>
 	</blockquote>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ligula eleifend elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam. Pellentesque ut sollicitudin ante. Donec vel adipiscing sapien, at euismod dui.</p>
@@ -93,7 +93,7 @@
 	{{/inline}}
 {{/content}}
 
-{{> slideshow items=items.slideshow title="Slideshow"}}
+{{> slideshow items=items.slideshow title="Slideshow" caption="Test caption"}}
 
 {{#> content}}
 	{{#*inline "body"}}
@@ -237,22 +237,22 @@
 {{#> nbForm}}
 	{{#*inline "form"}}
 
-	<form id="nb-form-{{page.name}}" class="uk-form-stacked uk-width-2-3@s uk-width-3-5@m InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1">
+	<form id="nb-form-{{page.name}}" class="uk-form-stacked InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1">
 
-		<h3>Form Styles</h3>
+		<h2>Form Styles</h2>
 
 		{{#> ukGrid class="uk-grid-small"}}
 			{{#*inline "cells"}}
 
-			{{> nbInput label="Your Name" name="name" title="Please enter your name"}}
+			{{> nbInput label="Your Name" name="name" title="Please enter your name" class="uk-width-2-3"}}
 
-			{{> nbInput label="Email Address" name="email" type="email" title="Please enter a valid email address"}}
+			{{> nbInput label="Email Address" name="email" type="email" title="Please enter a valid email address" class="uk-width-2-3"}}
 
-			{{> nbInput label="Telephone" name="tel" type="tel"}}
+			{{> nbInput label="Telephone" name="tel" type="tel" class="uk-width-1-2"}}
 
 			{{> nbInput label="Your Enquiry" name="enquiry" type="textarea" title="Please enter your enquiry"}}
 
-			{{> nbInput name="submit" type="submit" value="Send"}}
+			{{> nbInput name="submit" type="submit" value="Send Message" style="secondary"}}
 
 			{{/inline}}
 		{{/ukGrid}}

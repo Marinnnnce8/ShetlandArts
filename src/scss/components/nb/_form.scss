@@ -54,9 +54,13 @@
 		}
 	}
 
+	&-errors {
+		margin-top: 45px;
+		padding: 20px 20px 28px;
+	}
+
 	&-error {
-		font-size: $global-small-font-size;
-		font-weight: $base-strong-font-weight;
+		font-size: 14px;
 		margin-bottom: 5px; // math.div($global-small-margin, 2);
 	}
 

@@ -1,0 +1,7 @@
+.uk-lightbox {
+	.uk-slidenav {
+		@include hover {
+			box-shadow: none;
+		}
+	}
+}

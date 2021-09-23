@@ -1,0 +1,19 @@
+@mixin hook-base-link {
+	transition: $transition;
+}
+
+@mixin hook-base-link-hover {
+	text-decoration: none;
+	@include link-hover($primary);
+}
+
+@mixin hook-base-blockquote {
+	font-weight: $bold;
+	padding: 43px 45px 50px;
+	border-bottom: 1px solid rgba($black, .6);
+	border-top: 1px solid rgba($black, .6);
+
+	@media (min-width: $breakpoint-small) {
+		padding: 43px 45px 50px 100px;
+	}
+}

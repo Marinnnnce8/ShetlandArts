@@ -1,6 +1,28 @@
 @mixin hook-form-misc {
-    .uk-textarea {
-        min-height: $global-large-gutter;
-        min-width: 100%;
-    }
+	.uk-textarea {
+		min-height: $global-large-gutter;
+		min-width: 100%;
+	}
+}
+
+.uk-input,
+.uk-select,
+.uk-textarea,
+.uk-radio,
+.uk-checkbox {
+	font-size: 16px;
+	border-width: 2px;
+}
+
+@mixin hook-form-focus {
+	box-shadow: 0 0 0 5px rgba($yellow, .5);
+}
+
+@mixin hook-form-label {
+	font-weight: $bold;
+	font-size: 16px;
+
+	~.uk-text-small {
+		margin-top: -5px;
+	}
 }

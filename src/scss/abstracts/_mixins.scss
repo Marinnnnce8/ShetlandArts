@@ -4,12 +4,13 @@
 
 // Background Icon
 @mixin bg-icon($icon) {
-	background-image: url('data:image/svg+xml;utf8,' + $icon);
+	background-image: url('data:image/svg+xml;utf8,'+ $icon);
 	background-repeat: no-repeat;
 }
 
 // Hover
 @mixin hover {
+
 	&:hover,
 	&:focus,
 	&:active,
@@ -42,6 +43,13 @@
 	white-space: nowrap;
 }
 
+// Truncate text
+@mixin link-hover($color) {
+	@include hover {
+		box-shadow: inset 0 -1px 0 0 $color;
+	}
+}
+
 
 //
 // UIkit
@@ -69,3 +77,12 @@
 
 // Utilities
 @import 'uikit/text';
+
+// Links
+@import 'uikit/link';
+
+// Slideshow
+@import 'uikit/slideshow';
+
+// Lightbox
+@import 'uikit/lightbox';
