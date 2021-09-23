@@ -1,0 +1,19 @@
+@mixin hook-table {
+	thead {
+		border-top: 2px solid $black;
+		border-bottom: 2px solid $black;
+	}
+
+	tbody tr {
+		border-bottom: 1px solid $light-grey;
+	}
+}
+
+.uk-table td {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+@mixin hook-table-cell {
+	font-size: 16px;
+}

@@ -155,6 +155,25 @@
 				"width": "1200",
 				"height": "675"
 			}
+		],
+		"accordions": [
+			{
+				"opened": true,
+				"title": "Excepteur sint occaecat cupidatat non proident",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Duis aute irure dolor",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Sed ut perspiciatis unde omnis iste natus error sit accusantium",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			},
+			{
+				"title": "Quis autem vel eum iure reprehenderit",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit volupt accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, volupt accusantium doloremque, totam rem."
+			}
 		]
 	}
 }

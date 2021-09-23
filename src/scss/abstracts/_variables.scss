@@ -31,15 +31,16 @@ $white: #fff;
 $black: #000;
 $primary: #cb3132;
 $secondary: $black;
-$success: #32d296;
-$warning: #faa05a;
+$success: #82ca9c;
+$blue: #30aad7;
+$warning: #fdb913;
 $danger: $primary;
 $red: #a60001;
 $yellow: #fddb88;
-$yellow-dark: #fdb913;
+$yellow-dark: #faa05a;
 $grey: lighten($black, 40%);
-$light-grey: lighten($grey, 32%);
-$off-white: lighten($light-grey, 20%);
+$light-grey: #c2c2c2;
+$off-white: #f2f2f2;
 
 
 //
