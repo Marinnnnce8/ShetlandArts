@@ -1,0 +1,40 @@
+.share {
+	.uk-text-small {
+		margin-bottom: 5px;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		&:not(:last-of-type) {
+			margin-right: 10px;
+		}
+
+		&::before {
+			display: none;
+		}
+
+		a {
+			width: 44px;
+			height: 44px;
+			transition: $transition;
+			border: 1px solid $black;
+
+			svg {
+				width: 16px;
+				color: $white;
+			}
+
+			@include hover {
+				background-color: $white;
+				box-shadow: none;
+
+				svg {
+					color: $black;
+				}
+			}
+		}
+	}
+}

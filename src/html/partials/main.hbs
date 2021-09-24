@@ -48,6 +48,11 @@
 			{{#if page.banner}}
 				{{> banner}}
 			{{else}}
+				{{#if page.styleguide}}
+					<div class="share-sticky uk-flex uk-flex-right" data-uk-sticky="media: 1200; offset: 100">
+						{{>share sticky="true"}}
+					</div>
+				{{/if}}
 				{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
 					{{#*inline "out"}}
 						{{> ukBreadcrumb}}					

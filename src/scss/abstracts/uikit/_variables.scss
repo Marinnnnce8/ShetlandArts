@@ -131,8 +131,8 @@ $alert-color: $black;
 //
 // Grid
 //
-$grid-gutter-horizontal: $global-gutter;
-$grid-gutter-horizontal-l: $global-medium-gutter;
+$grid-gutter-horizontal: 60px;
+$grid-gutter-horizontal-l: 60px;
 $grid-large-gutter-horizontal: $global-medium-gutter;
 $grid-large-gutter-horizontal-l: $global-large-gutter;
 
@@ -203,3 +203,10 @@ $accordion-title-font-size: 22px;
 $accordion-title-line-height: 1.7;
 $accordion-title-color: $black;
 $accordion-title-hover-color: $primary;
+
+
+//
+// Card
+//
+$card-title-font-size: 30px;
+$card-title-line-height: 1.3;

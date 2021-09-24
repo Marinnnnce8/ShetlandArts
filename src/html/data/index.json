@@ -64,26 +64,51 @@
 		],
 		"posts": [
 			{
-				"title": "News Post 1",
+				"title": "Student Profile - Margaret Robertson, BA Applied Music",
 				"url": "#",
-				"date_pub": "April 20th 2020",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-columns.jpg",
-				"getSummary": "To best optimise the page and provide the visitor with useful and informative text, it would be good to have a sentence or two included here."
+				"type": "visual art",
+				"date_pub": "Jun 5,th 2021, ",
+				"author_pub": "by Graham Webster",
+				"getImage": "./img/related-posts-1.png"
 			},
 			{
-				"title": "News Post 2",
+				"title": "Student Profile - Norman Willmore Vocational Pathways, NC, HNC Music",
 				"url": "#",
-				"date_pub": "April 17th 2020",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg",
-				"getSummary": "To best optimise the page and provide the visitor with useful and informative text, it would be good to have a sentence or two included here."
+				"type": "film",
+				"date_pub": "Jun 5,th 2021, ",
+				"author_pub": "by Graham Webster",
+				"getImage": "./img/related-posts-2.png"
 			},
 			{
-				"title": "News Post 3",
+				"title": "Student Profile - Zdenka Mlynárikov, BA Applied Music",
 				"url": "#",
-				"dates": "April 1st 2020, 5pm",
-				"location": "Somewhere over the rainbow",
-				"getImage": "https://aws.nbcommunication.com/template/img/placeholder-sprinkler.jpg",
-				"getSummary": "This is actually an event, to demonstrate the dates and location fields."
+				"type": "visual art & craft",
+				"date_pub": "Jun 5,th 2021, ",
+				"author_pub": "by Graham Webster",
+				"getImage": "./img/related-posts-3.png"
+			}
+		],
+		"pages": [
+			{
+				"title": "Student Profile - Margaret Robertson, BA Applied Music",
+				"url": "#",
+				"getImage": "./img/related-pages-1.png",
+				"label": "arts at home"
+
+			},
+			{
+				"title": "Student Profile - Norman Willmore Vocational Pathways, NC, HNC Music",
+				"url": "#",
+				"getImage": "./img/related-pages-2.png",
+				"label": "current projects"
+
+			},
+			{
+				"title": "Student Profile - Zdenka Mlynárikov, BA Applied Music",
+				"url": "#",
+				"getImage": "./img/related-pages-3.png",
+				"label": "past projects"
+
 			}
 		],
 		"gallery": [
@@ -185,6 +210,30 @@
 				"alt": "This is video",
 				"label": "What we do",
 				"title": "Shetland Arts Embeded Video"
+			}
+		]
+	},
+	"footerShare": {
+		"items": [
+			{
+				"src": "#",
+				"label": "Visit our Facebook page",
+				"name": "facebook"
+			},
+			{
+				"src": "#",
+				"label": "Contact us via WhatsApp",
+				"name": "whatsapp"
+			},
+			{
+				"src": "#",
+				"label": "Visit our Instagram page",
+				"name": "instagram"
+			},
+			{
+				"src": "#",
+				"label": "Visit our Linkedin profile",
+				"name": "linkedin"
 			}
 		]
 	}

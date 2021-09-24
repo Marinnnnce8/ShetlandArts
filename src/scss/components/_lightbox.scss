@@ -1,11 +1,5 @@
 .lightbox {
 
-	a {
-		@include hover {
-			box-shadow: none;
-		}
-	}
-
 	.uk-text-large {
 		line-height: 1.7;
 	}

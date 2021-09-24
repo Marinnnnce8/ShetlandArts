@@ -1,0 +1,28 @@
+.uk-sticky {
+	&.share-sticky {
+		right: 50px;
+		position: absolute;
+		max-width: 200px !important;
+
+		.share {
+
+			li {
+				margin-top: 3px;
+				margin-bottom: 3px;
+
+				&:not(:last-of-type) {
+					margin-right: 3px;
+				}
+			}
+
+			a {
+				width: 38px;
+				height: 38px;
+
+				svg {
+					width: 14px;
+				}
+			}
+		}
+	}
+}

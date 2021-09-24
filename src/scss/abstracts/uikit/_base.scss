@@ -1,10 +1,13 @@
+@mixin hook-base-h6 {
+	text-transform: uppercase;
+}
+
 @mixin hook-base-link {
 	transition: $transition;
 }
 
 @mixin hook-base-link-hover {
 	text-decoration: none;
-	@include link-hover($primary);
 }
 
 @mixin hook-base-blockquote {

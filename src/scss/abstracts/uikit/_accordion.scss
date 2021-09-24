@@ -40,13 +40,6 @@
 			position: relative;
 		}
 	}
-
-	.uk-accordion-title {
-
-		@include hover {
-			box-shadow: none;
-		}
-	}
 }
 
 @mixin hook-accordion-title {

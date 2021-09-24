@@ -1,0 +1,33 @@
+<div class="share uk-position-relative uk-position-z-index uk-margin-medium-bottom{{#if sticky}} uk-text-right{{else}} uk-text-center{{/if}}{{#if class}} {{class}}{{/if}}">
+    {{#unless footer}}
+        {{#if page.share.title}}
+            <p class="uk-text-small uk-text-bold uk-text-uppercase uk-text-secondary">{{page.share.title}}</p>
+        {{/if}}
+    {{/unless}}
+    <ul class="uk-flex uk-flex-middle{{#unless footer}} uk-flex-center{{/unless}} uk-flex-wrap uk-list">
+        {{!-- {{#if footer}}
+            {{#each footerShare.items}}
+                {{#with this}}    
+                <li class="uk-margin-remove-top{{#unless @last}} uk-margin-small-right{{/unless}}">
+                    <a class="uk-border-circle uk-flex uk-flex-middle uk-flex-center uk-background-secondary social" href="{{#if (eq this.name "envelope")}}mailto:{{/if}}{{this.src}}" {{#if (neq this.name "envelope")}}target="_blank" rel="noopener noreferrer"{{/if}} aria-label="{{this.label}}">
+                        {{> renderIcon name=this.name}}
+                    </a>
+                </li>
+                {{/with}}
+            {{/each}}
+        {{else}}         --}}
+            {{#each page.share.items}}
+                {{#with this}}    
+                <li class="uk-margin-remove-top">
+                    <a class="{{#if rounded}}uk-border-circle {{/if}}uk-flex uk-flex-middle uk-flex-center uk-background-secondary social" href="{{#if (eq this.name "envelope")}}mailto:{{/if}}{{this.src}}" {{#if (neq this.name "envelope")}}target="_blank" rel="noopener noreferrer"{{/if}} aria-label="{{this.label}}">
+                        {{> renderIcon name=this.name}}
+                    </a>
+                </li>
+                {{/with}}
+            {{/each}}
+        {{!-- {{/if}} --}}
+    </ul>
+	{{#if sticky}}
+	{{> ukButton label="Back to Blog" size="small" class="uk-width-1-1"}}
+	{{/if}}
+</div>

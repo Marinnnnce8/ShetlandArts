@@ -14,3 +14,14 @@
 [data-uk-lightbox] a {
 	cursor: zoom-in;
 }
+
+
+p,
+li {
+	a:not(.uk-accordion-title):not(.social):hover,
+	.uk-link:hover,
+	.uk-link-toggle:hover .uk-link,
+	.uk-link-toggle:focus .uk-link {
+		@include link-hover($primary);
+	}
+}
