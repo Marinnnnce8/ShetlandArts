@@ -1,7 +1,7 @@
 {
 	"nb": {
-		"siteName": "Template Site",
-		"clientName": "NB Communication Ltd"
+		"siteName": "Shetland Arts",
+		"clientName": "SHETLAND ARTS DEVELOPMENT AGENCY"
 	},
 	"ukContainer": "small",
 	"cta": "Find out more",
@@ -38,7 +38,9 @@
 	],
 	"legal": [
 		"Terms & Conditions",
+		"TICKETING & ENTRY POLICIES",
 		"Privacy Policy",
+		"GDPR AND PRIVACY NOTICE",
 		"Disclaimer"
 	],
 	"items": {
@@ -210,30 +212,6 @@
 				"alt": "This is video",
 				"label": "What we do",
 				"title": "Shetland Arts Embeded Video"
-			}
-		]
-	},
-	"footerShare": {
-		"items": [
-			{
-				"src": "#",
-				"label": "Visit our Facebook page",
-				"name": "facebook"
-			},
-			{
-				"src": "#",
-				"label": "Contact us via WhatsApp",
-				"name": "whatsapp"
-			},
-			{
-				"src": "#",
-				"label": "Visit our Instagram page",
-				"name": "instagram"
-			},
-			{
-				"src": "#",
-				"label": "Visit our Linkedin profile",
-				"name": "linkedin"
 			}
 		]
 	}

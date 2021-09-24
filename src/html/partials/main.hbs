@@ -65,25 +65,137 @@
 
 		</main>
 
-		<footer class="footer uk-padding-large uk-padding-remove-horizontal">
-			<div class="uk-container uk-text-center">
+		<footer class="footer">
+			<div class="uk-container uk-container-xlarge">
+				{{!-- <div class="footer-top">
+						<div class="uk-container uk-container-xlarge">
+							<div class="uk-flex uk-flex-around uk-flex-middle">
+								<a href="#" class="uk-text-uppercase uk-flex uk-flex-middle">
+									Book Tickets
+									{{>renderIcon icon=''}}
+								</a>
+								<a href="#" class="uk-text-uppercase uk-flex uk-flex-middle">
+									Donate
+									{{>renderIcon icon=''}}
+								</a>
+								<a href="#" class="uk-text-uppercase uk-flex uk-flex-middle">
+									Become a member
+									{{>renderIcon icon=''}}
+								</a>
+								<a href="#" class="uk-text-uppercase uk-flex uk-flex-middle">
+									Sign up to our mailing list
+									{{>renderIcon icon=''}}
+								</a>
+							</div>
+						</div>
+				</div> --}}
 
-				<div class="legal uk-margin-small-bottom">
-					<ul>
-					{{#each legal}}
-						<li>
-							<a href="#">{{this}}</a>
-						</li>
-					{{/each}}
-					</ul>
+				<div class="footer-middle">
+					<div class="uk-container">
+						{{#> ukGrid class="uk-grid-medium uk-child-width-1-4@m uk-child-width-1-2@s"}}
+							{{#*inline "cells"}}
+								<div>
+									<img src="./img/logo-footer.png" load='lazy' width="261" height="146" alt="Shetland Arts">
+									<p class="uk-text-small">Shetland's lead arts organisation, a registered charity core funded by Shetland Charitable Trust and Creative Scotland. Scottish Charity Number: SC037082</p>
+									<div class="uk-flex">
+										<img src="./img/shetland-cheritable-trust.png" load='lazy' width="237" height="49" alt="Shetland Charitable Trust">
+										<img src="./img/alba-chruthachail.png" load='lazy' width="82" height="53" alt="Alba Chruthachail">
+									</div>
+								</div>
+								<div>
+									<a href="tel:+441595743843" class="uk-h4 uk-text-bold uk-text-uppercase">Contact Us<br> +44 (0)1595 743 843</a>
+									<p class="uk-text-small">Shetland Arts Development Agency Mareel, Lerwick, Shetland, ZE1 0WQ</p>
+									<div class="uk-text-small">Shetland Arts Reception:</div>
+									<div class="uk-text-small">Tel: <a href="tel:+441595743843">+44 (0)1595 743 843</a></div>
+									<div class="uk-text-small">Fax: <a href="+441595694001">+44 (0) 1595 694 001</a></div>
+									<div class="uk-text-small"><a href="mailto:info@shetlandarts.org">info@shetlandarts.org</a></div>
+								</div>
+								<div>
+									<a href="tel:+441595745500" class="uk-h4 uk-text-bold uk-text-uppercase">Box Office<br> +44 (0)1595 745 500</a>
+									<p class="uk-text-small">
+										Tickets can be bought online, over the phone or in person at Mareel Shetland's new music, cinema and education venue; and the Garrison Theatre.
+									</p>
+									<div class="share uk-position-relative uk-position-z-index uk-text-center uk-margin-medium-top uk-grid-margin">
+										<ul class="uk-flex uk-flex-middle uk-flex-wrap uk-list">
+											<li class="uk-margin-remove-top">
+												<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+													{{> renderIcon name="facebook"}}
+												</a>
+											</li>
+											<li class="uk-margin-remove-top">
+												<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+													{{> renderIcon name="twitter"}}
+												</a>
+											</li>
+											<li class="uk-margin-remove-top">
+												<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest page">
+													{{> renderIcon name="pinterest"}}
+												</a>
+											</li>
+											<li class="uk-margin-remove-top">
+												<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="mailto:#" aria-label="Contact us via email">
+													{{> renderIcon name="instagram"}}
+												</a>
+											</li>
+											<li class="uk-margin-remove-top">
+												<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="mailto:#" aria-label="Contact us via email">
+													{{> renderIcon name="soundcloud"}}
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<ul class="uk-list uk-padding-remove-left">
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Get Tickets</a>
+										</li>
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Donate</a>
+										</li>
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Get In Touch</a>
+										</li>
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">About</a>
+										</li>
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Work For Us</a>
+										</li>
+										<li>
+											<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Volunteer With Us</a>
+										</li>
+									</ul>
+								</div>
+							{{/inline}}
+						{{/ukGrid}}
+					</div>
 				</div>
-
-				<div class="copyright uk-margin-small-bottom">Copyright &copy; {{year}} {{nb.clientName}}. All rights reserved.</div>
-
-				<div class="watermark">
-					Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
+			</div>
+			<div class="footer-bottom">
+				<div class="uk-container uk-container-xlarge">
+					<div class="uk-flex uk-flex-middle uk-flex-between">
+						<div class="uk-flex uk-flex-middle">
+							<div class="copyright uk-text-bold uk-text-uppercase uk-text-meta uk-margin-small-bottom">&copy; {{year}} {{nb.clientName}}</div>
+							<div class="legal uk-flex uk-flex-middle">
+								<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap uk-margin-remove-bottom">
+								{{#each legal}}
+									<li class="uk-margin-remove-top uk-flex uk-flex-middle">
+										<a href="#" class="uk-text-bold uk-text-uppercase uk-text-meta">{{this}}</a>
+									</li>
+								{{/each}}
+								</ul>
+							</div>
+							<div class="watermark uk-text-bold uk-text-uppercase uk-text-meta uk-margin-small-bottom">
+								Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
+							</div>						
+						</div>
+						<a href="#" data-uk-totop class="uk-button uk-button-primary uk-button-large uk-margin-small-bottom">
+							Back to the top
+							{{> renderIcon name="arrow-up"}}
+						</a>
+					</div>
 				</div>
-
 			</div>
 		</footer>
 	</div>

@@ -1,52 +1,69 @@
 .footer {
-	font-size: 0.9rem;
+	li a:not(.uk-accordion-title):not(.social) {
+		@include hover {
+			box-shadow: none;
+		}
+	}
+
+	&-middle {
+		background-color: $off-white;
+		padding-top: 70px;
+		padding-bottom: 60px;
+
+		.uk-text-small {
+			line-height: 1.6;
+		}
+
+		a {
+			color: rgba($black, .7);
+
+			@include hover {
+				color: $primary;
+			}
+		}
+	}
+
+	&-bottom {
+		padding: 50px 0 40px;
+
+		* {
+			line-height: 1.3;
+		}
+	}
+
+	.share li a {
+		width: 40px;
+		height: 40px;
+	}
 
 	@media (max-width: $breakpoint-mobile) {
 		font-size: 0.8rem;
 	}
 
 	.legal {
-		padding: $global-small-margin 0;
+		margin-right: 25px;
 
 		ul {
-			margin: 0;
-			padding: 0;
 
 			li {
-				display: inline-block;
-				list-style: none;
-				margin: 0;
-				padding: 0;
+				margin-bottom: 10px;
+
+				&:not(:last-of-type) {
+					margin-right: 25px;
+				}
 
 				a {
-					color: $grey;
 
 					@include hover {
 						color: $black;
 					}
 				}
-
-				&::after {
-					content: '|';
-					color: $light-grey;
-					display: inline-block;
-					padding: 0 $global-small-margin;
-				}
-
-				&:last-child::after {
-					content: '';
-					padding: 0;
-				}
-
-				@media (max-width: $breakpoint-mobile) {
-					display: block;
-
-					&::after {
-						display: none;
-					}
-				}
 			}
 		}
+	}
+
+	.copyright {
+		margin-right: 25px;
 	}
 
 	.watermark {
@@ -67,6 +84,17 @@
 				margin-left: 2px;
 				width: auto;
 			}
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		&-middle {
+			padding-top: 80px;
+			padding-bottom: 85px;
+		}
+
+		&-bottom {
+			padding: 40px 0 30px;
 		}
 	}
 }

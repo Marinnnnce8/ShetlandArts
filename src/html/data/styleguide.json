@@ -54,29 +54,5 @@
 				"name": "envelope"
 			}
 		]
-	},
-	"footerShare": {
-		"items": [
-			{
-				"src": "#",
-				"label": "Visit our Facebook page",
-				"name": "facebook"
-			},
-			{
-				"src": "#",
-				"label": "Contact us via WhatsApp",
-				"name": "whatsapp"
-			},
-			{
-				"src": "#",
-				"label": "Visit our Instagram page",
-				"name": "instagram"
-			},
-			{
-				"src": "#",
-				"label": "Visit our Linkedin profile",
-				"name": "linkedin"
-			}
-		]
 	}
 }

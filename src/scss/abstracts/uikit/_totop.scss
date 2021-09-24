@@ -1,0 +1,11 @@
+@mixin hook-totop {
+	background-color: $off-white;
+
+	&:not(.uk-button-text)::before {
+		background-color: $warning;
+	}
+
+	svg:not(.icon-arrow-up) {
+		display: none;
+	}
+}
