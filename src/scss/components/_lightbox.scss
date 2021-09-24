@@ -1,0 +1,81 @@
+.lightbox {
+
+	a {
+		@include hover {
+			box-shadow: none;
+		}
+	}
+
+	.uk-text-large {
+		line-height: 1.7;
+	}
+
+	.uk-h3 {
+		font-family: $font-default;
+	}
+
+	&-top {
+		min-height: 300px;
+	}
+
+	&-play {
+		transition: $transition;
+		position: absolute;
+		background: $black;
+		width: 47px;
+		height: 47px;
+		right: 0;
+		bottom: 0;
+
+		&::after {
+			position: relative;
+			content: '';
+			display: block;
+			transition: $transition;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 9.5px 0 9.5px 14px;
+			border-color: transparent transparent transparent $white;
+		}
+	}
+
+	&-strap {
+		background-color: $warning;
+		padding: 20px;
+		z-index: 0;
+
+		.uk-preserve {
+			z-index: -1;
+		}
+	}
+
+	@include hover {
+		.lightbox-play {
+			background-color: $primary;
+
+			&::after {
+				border-color: transparent transparent transparent $warning;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		&-top {
+			min-height: 370px;
+		}
+
+		&-play {
+			width: 94px;
+			height: 94px;
+
+			&::after {
+				border-width: 19.5px 0 19.5px 36px;
+			}
+		}
+
+		&-strap {
+			padding: 35px 35px 47px 81px;
+		}
+	}
+}

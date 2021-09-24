@@ -1,0 +1,54 @@
+@mixin hook-accordion {
+	li {
+		padding: 22px 30px;
+		border-bottom: 1px solid $black;
+
+		&:first-of-type {
+			border-top: 1px solid $black;
+		}
+
+		&:not(.uk-open) {
+			background-color: $white;
+		}
+
+		&.uk-open {
+			background-color: $off-white;
+
+			.uk-svg {
+				transform: rotate(180deg);
+			}
+		}
+
+		p {
+			font-size: 18px;
+
+			&:first-of-type {
+				margin-top: 10px;
+			}
+
+			&:last-of-type {
+				margin-bottom: 33px;
+			}
+		}
+
+		.uk-svg {
+			width: 17px;
+			height: 17px;
+			min-width: 17px;
+			color: $secondary;
+			transition: $transition;
+			position: relative;
+		}
+	}
+
+	.uk-accordion-title {
+
+		@include hover {
+			box-shadow: none;
+		}
+	}
+}
+
+@mixin hook-accordion-title {
+	font-weight: $bold;
+}

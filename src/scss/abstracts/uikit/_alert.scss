@@ -1,0 +1,8 @@
+@mixin hook-alert {
+	font-size: 16px;
+	padding: 20px 35px 25px;
+
+	strong {
+		font-weight: $medium;
+	}
+}

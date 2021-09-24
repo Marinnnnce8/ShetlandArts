@@ -1,0 +1,15 @@
+{{#each items}}
+    {{#with this}} 
+    <div class="lightbox-box uk-position-relative lightbox-inner uk-overflow-hidden" data-uk-lightbox="video-autoplay: true">
+        <a class="uk-position-cover uk-position-z-index" href="{{src}}" data-caption="{{caption}}" aria-label="Click to watch video"></a>
+		<div class="lightbox-top uk-position-relative uk-background-cover" data-uk-img style="background-image: url('./img/{{img}}');">
+			<span class="lightbox-play uk-flex uk-flex-center uk-flex-middle" role="presentation"></span>
+		</div>
+        <div class="uk-flex uk-flex-column uk-flex-right lightbox-strap uk-position-relative uk-overflow-hidden">
+				<img class="uk-position-bottom-right uk-preserve" src="./img/boat.svg" data-uk-svg alt="Shetland Arts Logo">
+                <span class="uk-text-large uk-text-bold uk-text-uppercase">{{label}}</span>
+                <span class="uk-h3 uk-margin-remove-bottom uk-margin-remove-top">{{title}}</span>
+        </div>
+    </div>
+    {{/with}}
+{{/each}}    
