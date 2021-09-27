@@ -1,0 +1,99 @@
+.about {
+
+	&-box {
+		padding-top: 90px;
+
+		&::before {
+			background-color: $warning;
+			content: '';
+			display: block;
+			left: -40px;
+			width: calc(100% + 80px);
+			top: 0;
+			bottom: 0;
+			position: absolute;
+		}
+
+		.uk-preserve {
+			left: 50%;
+			transform: translateX(-50%);
+			position: absolute;
+			bottom: 65px;
+			max-width: 320px;
+			min-width: 320px;
+			width: 100%;
+		}
+	}
+
+	h2 {
+		line-height: 1;
+		margin-bottom: 15px;
+	}
+
+	.uk-grid-column-small,
+	.uk-grid-small {
+		margin-left: -10px;
+
+		>* {
+			padding-left: 10px;
+		}
+
+		>div:last-of-type {
+			margin-top: 30px;
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+
+		&-box {
+			padding-top: 75px;
+
+			&::before {
+				left: 0;
+				width: 83.9%;
+			}
+
+			.uk-preserve {
+				right: 16.1%;
+				transform: none;
+				bottom: 0;
+				width: 100%;
+			}
+		}
+
+		h2 {
+			margin-bottom: 106px;
+		}
+
+		.uk-grid-small {
+
+			>div:last-of-type {
+				margin-top: 60px;
+			}
+		}
+
+		.uk-container .uk-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+		h2 {
+			padding-right: 95px;
+		}
+	}
+
+	@media (max-width: $breakpoint-medium) {
+		.uk-h3 {
+			font-size: 44px;
+			margin-bottom: 40px;
+		}
+
+		*+.uk-grid-margin,
+		.uk-grid+.uk-grid,
+		.uk-grid>.uk-grid-margin {
+			margin-top: 30px;
+		}
+	}
+}
