@@ -1,12 +1,13 @@
 {{#each items}}
 	{{#with this}}
-	<div>
-		<div class="uk-card">
+	<div{{#if class}} class="{{class}}"{{/if}}>
+		<div class="uk-card"{{#if isMedia}} data-uk-lightbox="animation: fade" data-uk-scrollspy="cls: uk-animation-slide-bottom-small"{{/if}}>
 			<a href="{{url}}" class="uk-position-cover uk-position-z-index"{{#if isMedia}} data-caption="{{caption}}" aria-label="Click to play media"{{/if}}></a>
-			<div class="uk-card-media-top uk-overflow-hidden uk-position-relative">
-				<img src="{{getImage}}" alt="{{title}}" width="440" height="293" loading="lazy">
+			<div class="uk-card-media-top uk-overflow-hidden uk-position-relative{{#if hasCover}} has-cover uk-cover-container{{/if}}">
+				<img src="{{getImage}}" alt="{{title}}" width="{{width}}" height="{{height}}" loading="lazy"{{#if hasCover}} data-uk-cover{{/if}}>
 				{{#if isMedia}}
-					<span class="uk-position-bottom-left">
+					{{> renderIcon class="uk-position-center uk-position-z-index" name="play"}}
+					<span class="uk-position-bottom-left uk-background-secondary uk-flex uk-flex-middle uk-flex-center uk-position-z-index" role="presentation">
 						{{> renderIcon name=icon}}
 					</span>
 				{{/if}}
@@ -18,7 +19,7 @@
 				{{/if}}
 			</div>
 			{{#unless label}}
-				<div class="uk-card-body uk-padding-remove">
+				<div class="uk-card-body uk-position-relative uk-padding-remove">
 					{{#if type}}
 					<div class="uk-text-primary uk-margin-top uk-h6">{{type}}</div>
 					{{/if}}
@@ -27,7 +28,7 @@
 					<div class="uk-text-small uk-text-uppercase">{{date_pub}}{{#if author_pub}}{{author_pub}}{{/if}}{{#if time_pub}}{{time_pub}}{{/if}}</div>
 					{{/if}}
 					{{#if cta}}
-					{{> ukButton link=url label="Find out more" style="secondary" size="large" icon="arrow-right"}}
+						{{> ukButton link=url label=cta style="secondary" class="uk-position-z-index" size="small" icon="arrow-right"}}
 					{{/if}}
 				</div>
 			{{/unless}}

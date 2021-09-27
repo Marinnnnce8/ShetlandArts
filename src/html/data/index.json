@@ -64,6 +64,102 @@
 				"getSummary": "To best optimise the page and provide the visitor with useful and informative text, it would be good to have a sentence or two included here."
 			}
 		],
+		"highlightsTop": [
+			{
+				"title": "Land (Cert 12A)",
+				"url": "#",
+				"type": "Film",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-1.png",
+				"cta": "Book now",
+				"width": "391",
+				"height": "262"
+			},
+			{
+				"title": "The Swings 3",
+				"url": "https://youtu.be/jmOuxZAJifA",
+				"type": "Drama & Dance",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-2.png",
+				"cta": "Watch now",
+				"isMedia": true,
+				"icon": "headphones",
+				"width": "392",
+				"height": "262"
+			}
+		],
+		"highlights": [
+			{
+				"title": "Land (Cert 12A)",
+				"url": "#",
+				"type": "Film",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-1.png",
+				"cta": "Book now",
+				"class": "uk-visible@m",
+				"width": "391",
+				"height": "262"
+			},
+			{
+				"title": "The Swings 3",
+				"url": "https://youtu.be/jmOuxZAJifA",
+				"type": "Drama & Dance",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-2.png",
+				"cta": "Watch now",
+				"isMedia": true,
+				"icon": "headphones",
+				"class": "uk-visible@m",
+				"width": "392",
+				"height": "262"
+			},
+			{
+				"title": "Adam Guest Live at Lunch",
+				"url": "#",
+				"type": "visual art & craft",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-3.png",
+				"cta": "Find out more",
+				"hasCover": true,
+				"width": "391",
+				"height": "262"
+			},
+			{
+				"title": "The French Dispatch",
+				"url": "https://youtu.be/jmOuxZAJifA",
+				"type": "Music",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-4.png",
+				"cta": "Listen now",
+				"isMedia": true,
+				"icon": "camera",
+				"hasCover": true,
+				"width": "391",
+				"height": "262"
+			},
+			{
+				"title": "Adam Guest Live at Lunch",
+				"url": "#",
+				"type": "Literature",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-5.png",
+				"cta": "Find out more",
+				"hasCover": true,
+				"width": "392",
+				"height": "262"
+			},
+			{
+				"title": "Dogtanian and the Three Muskehounds (Cert U)",
+				"url": "#",
+				"type": "Events & Workshops",
+				"date_pub": "Sat 12 Jun 2021, 1.30pm - 2.30pm",
+				"getImage": "./img/highlights-6.png",
+				"cta": "Book now",
+				"hasCover": true,
+				"width": "391",
+				"height": "262"
+			}
+		],
 		"posts": [
 			{
 				"title": "Student Profile - Margaret Robertson, BA Applied Music",
@@ -71,7 +167,9 @@
 				"type": "visual art",
 				"date_pub": "Jun 5,th 2021, ",
 				"author_pub": "by Graham Webster",
-				"getImage": "./img/related-posts-1.png"
+				"getImage": "./img/related-posts-1.png",
+				"width": "391",
+				"height": "391"
 			},
 			{
 				"title": "Student Profile - Norman Willmore Vocational Pathways, NC, HNC Music",
@@ -79,7 +177,9 @@
 				"type": "film",
 				"date_pub": "Jun 5,th 2021, ",
 				"author_pub": "by Graham Webster",
-				"getImage": "./img/related-posts-2.png"
+				"getImage": "./img/related-posts-2.png",
+				"width": "391",
+				"height": "391"
 			},
 			{
 				"title": "Student Profile - Zdenka Mlynárikov, BA Applied Music",
@@ -87,7 +187,9 @@
 				"type": "visual art & craft",
 				"date_pub": "Jun 5,th 2021, ",
 				"author_pub": "by Graham Webster",
-				"getImage": "./img/related-posts-3.png"
+				"getImage": "./img/related-posts-3.png",
+				"width": "391",
+				"height": "391"
 			}
 		],
 		"pages": [
@@ -95,22 +197,25 @@
 				"title": "Student Profile - Margaret Robertson, BA Applied Music",
 				"url": "#",
 				"getImage": "./img/related-pages-1.png",
-				"label": "arts at home"
-
+				"label": "arts at home",
+				"width": "391",
+				"height": "391"
 			},
 			{
 				"title": "Student Profile - Norman Willmore Vocational Pathways, NC, HNC Music",
 				"url": "#",
 				"getImage": "./img/related-pages-2.png",
-				"label": "current projects"
-
+				"label": "current projects",
+				"width": "391",
+				"height": "391"
 			},
 			{
 				"title": "Student Profile - Zdenka Mlynárikov, BA Applied Music",
 				"url": "#",
 				"getImage": "./img/related-pages-3.png",
-				"label": "past projects"
-
+				"label": "past projects",
+				"width": "391",
+				"height": "391"
 			}
 		],
 		"gallery": [
@@ -204,7 +309,7 @@
 		],
 		"lightbox": [
 			{
-				"src": "https://www.youtube.com/embed/jmOuxZAJifA",
+				"src": "https://youtu.be/jmOuxZAJifA",
 				"caption": "Video caption",
 				"img": "video-img.jpg",
 				"width": "868",
