@@ -1,5 +1,7 @@
 @mixin hook-totop {
 	background-color: $off-white;
+	padding: 18px 35px;
+	justify-content: flex-start;
 
 	&:not(.uk-button-text)::before {
 		background-color: $warning;

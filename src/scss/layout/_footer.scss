@@ -1,7 +1,52 @@
 .footer {
+
+	.uk-h4,
+	.uk-text-small {
+		color: $black;
+	}
+
 	li a:not(.uk-accordion-title):not(.social) {
 		@include hover {
 			box-shadow: none;
+		}
+	}
+
+	.uk-container .uk-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&-top {
+		background-color: $warning;
+		padding: 10px 0 50px 5px;
+
+		a {
+			align-items: flex-start;
+			letter-spacing: -.02em;
+			line-height: 83%;
+
+			svg {
+				width: 35px;
+				min-width: 35px;
+				margin-right: 15px;
+				color: inherit;
+			}
+
+			@include hover {
+				svg {
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	&-brand {
+		>a {
+			margin-bottom: 20px;
+		}
+
+		.uk-flex a:not(:last-of-type) {
+			margin-right: 30px;
 		}
 	}
 
@@ -24,7 +69,7 @@
 	}
 
 	&-bottom {
-		padding: 50px 0 40px;
+		padding: 47px 0 0;
 
 		* {
 			line-height: 1.3;
@@ -36,6 +81,14 @@
 		height: 40px;
 	}
 
+	.uk-totop {
+		position: absolute;
+		min-height: 100px;
+		max-width: 330px;
+		bottom: 0;
+		width: 100%;
+	}
+
 	@media (max-width: $breakpoint-mobile) {
 		font-size: 0.8rem;
 	}
@@ -43,20 +96,15 @@
 	.legal {
 		margin-right: 25px;
 
-		ul {
+		li {
+			&:not(:last-of-type) {
+				margin-right: 25px;
+			}
 
-			li {
-				margin-bottom: 10px;
+			a {
 
-				&:not(:last-of-type) {
-					margin-right: 25px;
-				}
-
-				a {
-
-					@include hover {
-						color: $black;
-					}
+				@include hover {
+					color: $black;
 				}
 			}
 		}
@@ -66,35 +114,119 @@
 		margin-right: 25px;
 	}
 
-	.watermark {
+	.watermark a {
+		align-items: center;
+		color: $black;
+		display: inline-flex;
+		font-weight: 700;
 
-		a {
-			align-items: center;
-			color: $black;
-			display: inline-flex;
-			font-weight: 700;
+		img {
+			height: 1rem;
+			margin-left: 2px;
+			width: auto;
+		}
 
-			@include hover {
-				color: #e11e2f;
-				text-decoration: none;
-			}
-
-			img {
-				height: 1rem;
-				margin-left: 2px;
-				width: auto;
-			}
+		@include hover {
+			color: #e11e2f;
+			text-decoration: none;
 		}
 	}
 
 	@media (min-width: $breakpoint-small) {
+		&-top a {
+			align-items: center;
+
+			&:not(:last-of-type) {
+				margin-right: 20px;
+			}
+
+			svg {
+				margin-left: 20px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.uk-container .uk-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+		&-top {
+			padding: 30px 0 80px;
+
+			svg {
+				margin-left: 15px;
+			}
+		}
+
 		&-middle {
 			padding-top: 80px;
 			padding-bottom: 85px;
+
+			.uk-grid {
+				padding-top: 115px;
+			}
+		}
+
+		&-brand {
+			max-width: 360px;
+			padding-right: 40px;
+
+			>a {
+				margin-bottom: 40px;
+			}
+
+			.uk-flex {
+				margin-top: 35px;
+			}
+		}
+
+		.uk-container>.uk-position-relative {
+			padding-right: 360px;
 		}
 
 		&-bottom {
-			padding: 40px 0 30px;
+			padding: 40px 0 20px;
+		}
+
+		.uk-totop {
+			right: 0;
+			top: 50%;
+			transform: translateY(calc(-50% - 10px));
+		}
+	}
+
+	@media (min-width: $breakpoint-xlarge) {
+		&-brand {
+			max-width: 440px;
+			padding-right: 90px;
+		}
+	}
+
+	@media (max-width: $breakpoint-large) {
+		&-bottom {
+			.uk-container>.uk-flex {
+				padding-left: 25px;
+				padding-right: 20px;
+				padding-bottom: 130px;
+			}
+
+			.uk-text-meta {
+				font-size: 15px;
+			}
+		}
+
+		.uk-totop {
+			left: 0;
+		}
+	}
+
+	@media (max-width: $breakpoint-small) {
+		&-top .uk-container .uk-container {
+			padding-right: 13px;
 		}
 	}
 }

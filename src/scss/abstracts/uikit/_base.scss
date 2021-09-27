@@ -16,7 +16,7 @@
 	border-bottom: 1px solid rgba($black, .6);
 	border-top: 1px solid rgba($black, .6);
 
-	@media (min-width: $breakpoint-small) {
+	@media (min-width: $breakpoint-medium) {
 		padding: 43px 45px 50px 100px;
 	}
 }
