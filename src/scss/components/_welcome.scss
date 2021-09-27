@@ -1,0 +1,21 @@
+.welcome {
+	.uk-container-small {
+		max-width: 855px;
+	}
+
+	.uk-h3 {
+		line-height: 83%;
+	}
+
+	@media (max-width: $breakpoint-medium) {
+		padding-bottom: 0;
+
+		.uk-h1 {
+			font-size: 44px;
+		}
+
+		.uk-h3 {
+			font-size: 26px;
+		}
+	}
+}
