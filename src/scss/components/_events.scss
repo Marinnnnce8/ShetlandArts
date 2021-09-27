@@ -1,0 +1,86 @@
+.events {
+	padding-top: 100px;
+
+	.calendar {
+		min-height: 64px;
+		padding: 0;
+	}
+
+	input[type='date'] {
+		// font-size: 0;
+		background-color: $primary;
+		border: 0;
+		outline: none;
+		z-index: 1;
+	}
+
+	.uk-button {
+		border: 2px solid $primary;
+		background-color: $white;
+		color: $primary;
+		padding: 16px 35px;
+
+		@include hover {
+			background-color: $primary;
+			color: $white;
+		}
+	}
+
+	.uk-h1 {
+		font-size: 67px;
+		line-height: 83%;
+		letter-spacing: -.02em;
+		margin-bottom: 35px;
+
+		svg {
+			width: 64px;
+			color: $black;
+		}
+	}
+
+	.uk-list>*>ul,
+	.uk-list>:nth-child(n+2) {
+		margin-top: 20px;
+	}
+
+	.uk-form-custom .uk-button {
+		padding-left: 95px;
+		max-width: 320px;
+		width: 100%;
+
+		svg {
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+		}
+
+		.icon-folder {
+			width: 34px;
+			left: 40px;
+		}
+
+		.icon-caret-down {
+			right: 27px;
+			width: 12px;
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		padding-top: 70px;
+
+		.uk-h1 {
+			font-size: 87px;
+			margin-right: 20px;
+		}
+
+		.uk-width-2-3\@m {
+			padding-top: 75px;
+		}
+	}
+
+	@media (max-width: $breakpoint-medium) {
+		>.uk-container>.uk-flex {
+			flex-direction: column;
+		}
+	}
+}

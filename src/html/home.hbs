@@ -1,7 +1,9 @@
 {{#> main}}
 	{{#*inline "main"}}
 
-	{{#> ukSection heading="HIGHLIGHTS" class="highlights" headingClass="uk-h1" size="large"}}
+	{{>events}}
+
+	{{#> ukSection heading="HIGHLIGHTS" sectionClass="highlights" headingClass="uk-h1" size="large"}}
 		{{#*inline "out"}}
 
 		{{> nbItems gridClass="uk-hidden@m uk-margin-xlarge-bottom uk-grid-match uk-flex-center nb-items-container highlights-mob" items=items.highlightsTop}}

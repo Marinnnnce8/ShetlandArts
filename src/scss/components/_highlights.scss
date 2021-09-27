@@ -1,7 +1,11 @@
 .highlights {
+	padding: 100px 0;
+
 	.uk-h1 {
 		font-size: 67px;
 		margin-bottom: 35px;
+		line-height: 83%;
+		letter-spacing: -.02em;
 	}
 
 	.highlights-mob .uk-card-body {
@@ -14,10 +18,10 @@
 	}
 
 	@media (min-width: $breakpoint-medium) {
+		padding: 40px 0 110px;
+
 		.uk-h1 {
 			font-size: 87px;
-			line-height: 83%;
-			letter-spacing: -.02em;
 			margin-bottom: 65px;
 		}
 	}
