@@ -217,3 +217,15 @@ $card-title-line-height: 1.1;
 // Totop
 //
 $totop-color: $black;
+
+
+//
+// Dotnav
+//
+$dotnav-item-width: 12px;
+$dotnav-item-border-radius: 0;
+
+$dotnav-item-background: rgba($white, .3) !default;
+$dotnav-item-hover-background: rgba($white, .6) !default;
+$dotnav-item-onclick-background: rgba($white, .2) !default;
+$dotnav-item-active-background: $white;
