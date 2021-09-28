@@ -36,10 +36,10 @@ li {
 	&:not(.uk-button-text) {
 		@include hover {
 			background-color: $grey-dark;
-			border-radius: 50%;
 
 			span,
-			span::before {
+			span::before,
+			span::after {
 				background-color: $white;
 			}
 		}
@@ -49,7 +49,6 @@ li {
 		width: 30px;
 		height: 2px;
 		background-color: $black;
-		transition: $transition;
 
 		&::before,
 		&::after {

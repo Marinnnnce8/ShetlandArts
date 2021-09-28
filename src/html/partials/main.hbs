@@ -32,10 +32,44 @@
 
 				<div class="uk-navbar-right">
 					<div id="nav" class="uk-visible@m">
+						<div class="uk-flex uk-flex-middle uk-flex-right nav-top">
+							<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
+							<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+								<ul class="uk-nav uk-dropdown-nav">
+									<li class="uk-active"><a href="#">Active</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-header">Header</li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">Item</a></li>
+								</ul>
+							</div>
+							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
+								<li>
+									<a class="uk-button uk-button-small" href="#">
+										{{>renderIcon class="uk-margin-small-right" name='letter'}}
+										Contact
+									</a>
+								</li>
+								<li class="uk-margin-remove-top">
+									<a class="uk-button uk-button-small" href="#">
+										{{>renderIcon class="uk-margin-small-right" name='donate'}}
+										Donate
+									</a>
+								</li>
+								<li class="uk-margin-remove-top">
+									<a class="uk-button uk-button-small" href="#">
+										{{>renderIcon class="uk-margin-small-right" name='tickets'}}
+										Book Online
+									</a>
+								</li>
+							</ul>
+						</div>
 						<div class="uk-flex uk-flex-middle">
 							{{> renderNavigation items=menu active=page.name}}
 							<button class="uk-button toggle-button" aria-label="Open menu"><span class="uk-position-center" role="presentation"></span></button>
-							<div data-uk-dropdown>
+							<div data-uk-dropdown="mode: click">
 								<ul class="uk-nav uk-dropdown-nav">
 									<li class="uk-active"><a href="#">Active</a></li>
 									<li><a href="#">Item</a></li>

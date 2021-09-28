@@ -1,6 +1,6 @@
 .header {
 	background-color: $white;
-	padding: 3px 6px 11px 20px;
+	// padding: 3px 6px 11px 20px;
 
 	.uk-logo {
 
@@ -10,18 +10,89 @@
 	}
 
 	a {
+		transition: $transition;
+
 		@include hover {
 			box-shadow: none !important;
 		}
 	}
 
+	.nav-top {
+		svg {
+			width: 20px;
+		}
+
+		.icon-caret-down {
+			width: 10px;
+			pointer-events: none;
+		}
+
+		.open-today {
+			text-transform: none;
+			padding-right: 0;
+			background-color: transparent;
+
+			@include hover {
+				color: $primary;
+
+				svg {
+					color: $primary;
+				}
+			}
+		}
+
+		ul {
+			li {
+				&:not(:last-of-type) {
+					margin-right: 20px;
+				}
+
+				&::before {
+					pointer-events: none;
+				}
+			}
+
+			a {
+				padding: 0;
+				color: $primary;
+				text-transform: none;
+
+				@include hover {
+					color: $black;
+
+					svg {
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+
 	@media (min-width: $breakpoint-medium) {
-		padding: 10px 50px 12px 90px;
+		// padding: 10px 50px 12px 90px;
 
 		.uk-logo {
 
 			img {
 				width: 216px;
+			}
+		}
+
+		.nav-top {
+			margin-bottom: 26px;
+
+			ul li {
+				&:not(:last-of-type) {
+					margin-right: 30px;
+				}
+			}
+
+			a {
+				font-size: 16px;
+			}
+
+			.open-today {
+				margin-right: 30px;
 			}
 		}
 	}
