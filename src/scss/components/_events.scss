@@ -78,7 +78,7 @@
 		}
 	}
 
-	@media (max-width: $breakpoint-medium) {
+	@media (max-width: $breakpoint-small-max) {
 		>.uk-container>.uk-flex {
 			flex-direction: column;
 		}
