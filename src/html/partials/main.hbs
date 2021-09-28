@@ -35,15 +35,37 @@
 						<div class="uk-flex uk-flex-middle uk-flex-right nav-top">
 							<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
 							<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
-								<ul class="uk-nav uk-dropdown-nav">
-									<li class="uk-active"><a href="#">Active</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-header">Header</li>
-									<li><a href="#">Item</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-divider"></li>
-									<li><a href="#">Item</a></li>
-								</ul>
+								<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
+									<div>
+										<div>
+											<div class="uk-h5"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
+											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+											<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
+											<div class="uk-text-small uk-text-bold">Cafe hours:</div>
+											<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
+											<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div class="uk-h5"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
+											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+											<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div class="uk-h5"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
+											<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div class="uk-h5"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
+											<div class="uk-text-small">Private hire only</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
 								<li>
@@ -154,21 +176,21 @@
 					<div class="uk-container uk-container-large">
 						<div class="uk-flex">
 							<div class="footer-brand uk-visible@l">
-								<a class="uk-display-block" href="#"><img src="./img/logo-footer.png" load='lazy' width="261" height="146" alt="Shetland Arts"></a>
+								<a class="uk-display-block" href="#"><img src="./img/logo-footer.png" loading='lazy' width="261" height="146" alt="Shetland Arts"></a>
 								<p class="uk-text-small">Shetland's lead arts organisation, a registered charity core funded by Shetland Charitable Trust and Creative Scotland. Scottish Charity Number: SC037082</p>
 								<div class="uk-flex">
-									<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/shetland-cheritable-trust.png" load='lazy' width="237" height="49" alt="Shetland Charitable Trust"></a>
-									<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/alba-chruthachail.png" load='lazy' width="82" height="53" alt="Alba Chruthachail"></a>
+									<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/shetland-cheritable-trust.png" loading='lazy' width="237" height="49" alt="Shetland Charitable Trust"></a>
+									<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/alba-chruthachail.png" loading='lazy' width="82" height="53" alt="Alba Chruthachail"></a>
 								</div>
 							</div>
 							{{#> ukGrid class="uk-child-width-1-3@l uk-child-width-1-2@m"}}
 								{{#*inline "cells"}}
 									<div class="footer-brand uk-hidden@l">
-										<a class="uk-display-block" href="#"><img src="./img/logo-footer.png" load='lazy' width="261" height="146" alt="Shetland Arts"></a>
+										<a class="uk-display-block" href="#"><img src="./img/logo-footer.png" loading='lazy' width="261" height="146" alt="Shetland Arts"></a>
 										<p class="uk-text-small">Shetland's lead arts organisation, a registered charity core funded by Shetland Charitable Trust and Creative Scotland. Scottish Charity Number: SC037082</p>
 										<div class="uk-flex">
-											<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/shetland-cheritable-trust.png" load='lazy' width="237" height="49" alt="Shetland Charitable Trust"></a>
-											<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/alba-chruthachail.png" load='lazy' width="82" height="53" alt="Alba Chruthachail"></a>
+											<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/shetland-cheritable-trust.png" loading='lazy' width="237" height="49" alt="Shetland Charitable Trust"></a>
+											<a class="uk-margin-top" href="#" target="_blank" rel="noopener noreferrer"><img src="./img/alba-chruthachail.png" loading='lazy' width="82" height="53" alt="Alba Chruthachail"></a>
 										</div>
 									</div>
 									<div>
