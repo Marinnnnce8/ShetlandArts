@@ -38,7 +38,7 @@
 								<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 									<div>
 										<div>
-											<div class="uk-h5"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
+											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
 											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
 											<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
 											<div class="uk-text-small uk-text-bold">Cafe hours:</div>
@@ -48,20 +48,20 @@
 									</div>
 									<div>
 										<div>
-											<div class="uk-h5"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
+											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
 											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
 											<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
 										</div>
 									</div>
 									<div>
 										<div>
-											<div class="uk-h5"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
+											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
 											<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
 										</div>
 									</div>
 									<div>
 										<div>
-											<div class="uk-h5"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
+											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
 											<div class="uk-text-small">Private hire only</div>
 										</div>
 									</div>
@@ -90,17 +90,137 @@
 						</div>
 						<div class="uk-flex uk-flex-middle">
 							{{> renderNavigation items=menu active=page.name}}
-							<button class="uk-button toggle-button" aria-label="Open menu"><span class="uk-position-center" role="presentation"></span></button>
-							<div data-uk-dropdown="mode: click">
-								<ul class="uk-nav uk-dropdown-nav">
-									<li class="uk-active"><a href="#">Active</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-header">Header</li>
-									<li><a href="#">Item</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-divider"></li>
-									<li><a href="#">Item</a></li>
-								</ul>
+							<a href="#megamenu" class="uk-button toggle-button" aria-label="Open menu" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
+							<div data-uk-modal class="uk-width-1-1 mega-menu" id="megamenu">
+								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
+									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
+									<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+										<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
+											<div>
+												<div>
+													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
+													<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+													<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
+													<div class="uk-text-small uk-text-bold">Cafe hours:</div>
+													<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
+													<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
+												</div>
+											</div>
+											<div>
+												<div>
+													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
+													<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+													<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
+												</div>
+											</div>
+											<div>
+												<div>
+													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
+													<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
+												</div>
+											</div>
+											<div>
+												<div>
+													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
+													<div class="uk-text-small">Private hire only</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
+										<li>
+											<a class="uk-button uk-button-small" href="#">
+												{{>renderIcon class="uk-margin-small-right" name='letter'}}
+												Contact
+											</a>
+										</li>
+										<li class="uk-margin-remove-top">
+											<a class="uk-button uk-button-small" href="#">
+												{{>renderIcon class="uk-margin-small-right" name='donate'}}
+												Donate
+											</a>
+										</li>
+										<li class="uk-margin-remove-top">
+											<a class="uk-button uk-button-small" href="#">
+												{{>renderIcon class="uk-margin-small-right" name='tickets'}}
+												Book Online
+											</a>
+										</li>
+									</ul>
+								</div>								
+								<button data-uk-close class="uk-button toggle-button uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
+								<div class="uk-flex uk-flex-between uk-flex-wrap uk-modal-body">
+									<ul class="uk-list uk-margin-right uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">What’s on</a></li>
+										<li><a href="#">Today</a></li>
+										<li><a href="#">This Week</a></li>
+										<li><a href="#">This Weekend</a></li>
+										<li><a href="#">This Month</a></li>
+										<li><a href="#">Film</a></li>
+										<li><a href="#">Music</a></li>
+										<li><a href="#">Drama & Dance</a></li>
+										<li><a href="#">Visual Art & Craft </a></li>
+										<li><a href="#">Festivals</a></li>
+										<li><a href="#">Literature</a></li>
+										<li><a href="#">Comedy</a></li>
+										<li><a href="#">Events & Workshops</a></li>
+										<li><a href="#">Memberships</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Visit Us</a></li>
+										<li><a href="#">Bonhoga</a></li>
+										<li><a href="#">The Garrison</a></li>
+										<li><a href="#">Mareel</a></li>
+										<li><a href="#">ShetlandMade</a></li>
+										<li><a href="#">The Booth</a></li>
+										<li><a href="#">Access Information</a></li>
+										<li><a href="#">Artists Information</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Projects</a></li>
+										<li><a href="#">Past projects</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Festivals</a></li>
+										<li><a href="#">Screenplay</a></li>
+										<li><a href="#">Wordplay</a></li>
+										<li><a href="#">Artists Information</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Exhibitions</a></li>
+										<li><a href="#">Past Exhibitions</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Learn</a></li>
+										<li><a href="#">Study with us</a></li>
+										<li><a href="#">Youth Arts</a></li>
+										<li><a href="#">Wellbeing arts</a></li>
+										<li><a href="#">Art in care</a></li>
+										<li><a href="#">Schools resources</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Hire</a></li>
+										<li><a href="#">Meetings and conferences</a></li>
+										<li><a href="#">Weddings and partnerships</a></li>
+										<li><a href="#">Event hire</a></li>
+										<li><a href="#">Cinema hire</a></li>
+										<li><a href="#">Recording studio</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-right uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">About</a></li>
+										<li><a href="#">People</a></li>
+										<li><a href="#">Media centre</a></li>
+										<li><a href="#">Governance</a></li>
+									</ul>
+									<ul class="uk-list uk-margin-remove-top uk-margin-bottom">
+										<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Opportunities</a></li>
+										<li><a href="#">Jobs</a></li>
+										<li><a href="#">Volunteer</a></li>
+										<li><a href="#">Commissions</a></li>
+										<li><a href="#">Funding</a></li>
+										<li><a href="#">Artists resources</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="uk-visible@m">
 								<form class="uk-search uk-search-default">

@@ -1,0 +1,27 @@
+@mixin hook-dropdown {
+
+	.uk-text-small,
+	.uk-h5 {
+		color: $white;
+	}
+
+	.uk-text-small {
+		line-height: 1.5;
+	}
+
+	.uk-h5 {
+
+		.uk-text-primary {
+			border-bottom: 2px solid $primary;
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		padding: 100px 70px 50px;
+	}
+}
+
+@mixin hook-dropdown-nav-item {
+	font-size: 16px;
+	line-height: 1.1;
+}

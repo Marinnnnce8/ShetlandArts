@@ -1,0 +1,101 @@
+.nav-top {
+	svg {
+		width: 20px;
+	}
+
+	.icon-caret-down {
+		width: 10px;
+		pointer-events: none;
+	}
+
+	.open-today,
+	ul .uk-button {
+		z-index: 1025;
+		position: relative;
+
+		&:not(.uk-button-text) {
+			&::before {
+				position: absolute;
+				content: '';
+				right: 0;
+				left: auto;
+				top: auto;
+				width: calc(100% - 38px);
+				background-color: $primary;
+				height: 1px;
+				bottom: 0;
+				display: block;
+				opacity: 0;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
+		@include hover {
+			&:not(.uk-button-text)::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	.open-today {
+		text-transform: none;
+		padding-right: 0;
+		background-color: transparent;
+
+		&[aria-expanded='true'] {
+			color: $white;
+		}
+
+		&:not(.uk-button-text)::before {
+			width: calc(100% - 68px);
+			transform: translateX(-15%);
+		}
+
+		@include hover {
+			color: $primary;
+
+			svg {
+				color: $primary;
+			}
+		}
+	}
+
+	ul {
+		li {
+			&:not(:last-of-type) {
+				margin-right: 20px;
+			}
+
+			&::before {
+				pointer-events: none;
+			}
+		}
+
+		.uk-button {
+			padding: 0;
+			color: $primary;
+			text-transform: none;
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		margin-bottom: 26px;
+
+		ul li {
+			&:not(:last-of-type) {
+				margin-right: 30px;
+			}
+		}
+
+		.uk-button {
+			font-size: 16px;
+		}
+
+		.open-today {
+			margin-right: 30px;
+		}
+	}
+}

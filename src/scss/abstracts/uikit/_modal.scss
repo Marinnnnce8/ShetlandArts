@@ -1,0 +1,35 @@
+.uk-modal-page {
+	.open-today {
+		color: $white;
+	}
+}
+
+@mixin hook-modal {
+	a {
+		color: $white;
+
+		@include hover {
+			box-shadow: none !important;
+			color: $primary;
+		}
+	}
+
+	li:not(.uk-modal-title) a {
+		font-size: 16px;
+		line-height: 1.1;
+
+	}
+}
+
+.uk-modal {
+	padding: 5px 50px 25px;
+}
+
+@mixin hook-modal-body {
+	padding: 0 140px 0 0;
+}
+
+@mixin hook-modal-title {
+	margin-bottom: 30px;
+	font-family: $font-alt;
+}

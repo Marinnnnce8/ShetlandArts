@@ -71,9 +71,12 @@ li {
 		}
 	}
 
-	&[aria-expanded='true'] {
+	&.uk-close {
 		border-radius: 50%;
 		background-color: $grey-dark;
+		right: 97px;
+		position: absolute;
+		top: 70px;
 
 		span {
 			transform: translate(-50%, -50%) rotate(45deg);
@@ -87,6 +90,10 @@ li {
 				transform: rotate(-90deg) translate(-29%, -9%);
 				background-color: $white;
 			}
+		}
+
+		@include hover {
+			background-color: $primary;
 		}
 	}
 }
