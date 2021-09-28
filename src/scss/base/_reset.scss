@@ -18,10 +18,76 @@
 
 p,
 li {
+
 	a:not(.uk-accordion-title):not(.social):hover,
 	.uk-link:hover,
 	.uk-link-toggle:hover .uk-link,
 	.uk-link-toggle:focus .uk-link {
 		@include link-hover($primary);
+	}
+}
+
+.toggle-button {
+	background-color: transparent;
+	width: 56px;
+	height: 56px;
+	transition: $transition;
+
+	&:not(.uk-button-text) {
+		@include hover {
+			background-color: $grey-dark;
+			border-radius: 50%;
+
+			span,
+			span::before {
+				background-color: $white;
+			}
+		}
+	}
+
+	span {
+		width: 30px;
+		height: 2px;
+		background-color: $black;
+		transition: $transition;
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			display: block;
+			left: 0;
+			height: 2px;
+			background-color: $black;
+		}
+
+		&::before {
+			width: 30px;
+			top: -8px;
+		}
+
+		&::after {
+			width: 20px;
+			top: 8px;
+		}
+	}
+
+	&[aria-expanded='true'] {
+		border-radius: 50%;
+		background-color: $grey-dark;
+
+		span {
+			transform: translate(-50%, -50%) rotate(45deg);
+			background-color: $white;
+
+			&::after {
+				opacity: 0;
+			}
+
+			&::before {
+				transform: rotate(-90deg) translate(-29%, -9%);
+				background-color: $white;
+			}
+		}
 	}
 }

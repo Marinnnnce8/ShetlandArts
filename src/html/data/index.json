@@ -7,13 +7,13 @@
 	"cta": "Find out more",
 	"menu": [
 		{
-			"name": "home",
-			"title": "Home",
-			"url": "home.html"
+			"name": "whats-on",
+			"title": "What’s on",
+			"url": "whats-on.html"
 		},
 		{
-			"name": "about",
-			"title": "About",
+			"name": "visit-us",
+			"title": "Visit us",
 			"children": [
 				{
 					"name": "child",
@@ -22,8 +22,12 @@
 			]
 		},
 		{
-			"name": "contact",
-			"title": "Contact"
+			"name": "projects",
+			"title": "Projects"
+		},
+		{
+			"name": "about",
+			"title": "About"
 		}
 	],
 	"social": [

@@ -22,17 +22,37 @@
 	<div>
 
 		<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
-			<nav class="uk-navbar-container uk-navbar" data-uk-navbar>
+			<nav class="uk-navbar-container uk-navbar-transparent uk-navbar" data-uk-navbar>
 
 				<div class="uk-navbar-left">
 					<a href="./" class="uk-navbar-item uk-logo">
-						<img src="{{logo}}" alt="{{nb.siteName}} Logo">
+						<img src="{{logo}}" alt="{{nb.siteName}} Logo" width="216" height="121">
 					</a>
 				</div>
 
 				<div class="uk-navbar-right">
 					<div id="nav" class="uk-visible@m">
-						{{> renderNavigation items=menu active=page.name}}
+						<div class="uk-flex uk-flex-middle">
+							{{> renderNavigation items=menu active=page.name}}
+							<button class="uk-button toggle-button" aria-label="Open menu"><span class="uk-position-center" role="presentation"></span></button>
+							<div data-uk-dropdown>
+								<ul class="uk-nav uk-dropdown-nav">
+									<li class="uk-active"><a href="#">Active</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-header">Header</li>
+									<li><a href="#">Item</a></li>
+									<li><a href="#">Item</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">Item</a></li>
+								</ul>
+							</div>
+							<div class="uk-visible@m">
+								<form class="uk-search uk-search-default">
+									<span class="uk-search-icon-flip" data-uk-search-icon></span>
+									<input class="uk-search-input" type="search" placeholder="Search...">
+								</form>
+							</div>							
+						</div>
 					</div>
 					<a href="#mmenu" class="uk-navbar-toggle uk-hidden@m" aria-label="Toggle Navigation">
 						<span data-uk-navbar-toggle-icon></span>

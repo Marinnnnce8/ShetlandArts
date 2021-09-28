@@ -1,9 +1,28 @@
 .header {
+	background-color: $white;
+	padding: 3px 6px 11px 20px;
 
 	.uk-logo {
 
 		img {
-			width: 228px;
+			width: 166px;
+		}
+	}
+
+	a {
+		@include hover {
+			box-shadow: none !important;
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		padding: 10px 50px 12px 90px;
+
+		.uk-logo {
+
+			img {
+				width: 216px;
+			}
 		}
 	}
 }

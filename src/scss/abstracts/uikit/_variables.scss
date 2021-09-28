@@ -224,8 +224,31 @@ $totop-color: $black;
 //
 $dotnav-item-width: 12px;
 $dotnav-item-border-radius: 0;
-
 $dotnav-item-background: rgba($white, .3) !default;
 $dotnav-item-hover-background: rgba($white, .6) !default;
 $dotnav-item-onclick-background: rgba($white, .2) !default;
 $dotnav-item-active-background: $white;
+
+
+//
+// Search
+//
+$search-color: $black;
+$search-placeholder-color: $black;
+$search-icon-color: $black;
+$search-default-width: 150px;
+$search-default-height: 44px;
+$search-default-padding-horizontal: 0;
+
+
+//
+// Navbar
+//
+$navbar-nav-item-height: 0;
+$navbar-nav-item-padding-horizontal: 20px;
+$navbar-nav-item-color: $black;
+$navbar-nav-item-font-size: 24px;
+$navbar-nav-item-font-family: $font-alt;
+$navbar-nav-item-hover-color: $primary;
+$navbar-nav-item-onclick-color: $primary;
+$navbar-nav-item-active-color: $primary;

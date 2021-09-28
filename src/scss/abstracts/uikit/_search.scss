@@ -1,0 +1,22 @@
+.uk-search {
+	@media (min-width: $breakpoint-medium) {
+		margin-left: 70px;
+	}
+}
+
+@mixin hook-search-default-input {
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 2px solid $black;
+
+	&::placeholder {
+		font-weight: $medium;
+		font-size: 20px;
+		font-family: $font-default;
+	}
+}
+
+@mixin hook-search-default-input-focus {
+	border-bottom: 2px solid rgba($black, .5);
+}
