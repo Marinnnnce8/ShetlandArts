@@ -33,18 +33,6 @@ li {
 	height: 56px;
 	transition: $transition;
 
-	&:not(.uk-button-text) {
-		@include hover {
-			background-color: $grey-dark;
-
-			span,
-			span::before,
-			span::after {
-				background-color: $white;
-			}
-		}
-	}
-
 	span {
 		width: 30px;
 		height: 2px;
@@ -71,12 +59,25 @@ li {
 		}
 	}
 
+	@include hover {
+
+		span,
+		span::before,
+		span::after {
+			background-color: $primary;
+		}
+	}
+
 	&.uk-close {
 		border-radius: 50%;
 		background-color: $grey-dark;
 		right: 97px;
 		position: absolute;
 		top: 70px;
+
+		svg {
+			display: none;
+		}
 
 		span {
 			transform: translate(-50%, -50%) rotate(45deg);
@@ -94,6 +95,12 @@ li {
 
 		@include hover {
 			background-color: $primary;
+
+			span,
+			span::before,
+			span::after {
+				background-color: $white;
+			}
 		}
 	}
 }

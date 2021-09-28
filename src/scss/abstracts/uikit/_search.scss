@@ -1,5 +1,9 @@
 .uk-search {
 	@media (min-width: $breakpoint-medium) {
+		margin-left: 40px;
+	}
+
+	@media (min-width: $breakpoint-large) {
 		margin-left: 70px;
 	}
 }

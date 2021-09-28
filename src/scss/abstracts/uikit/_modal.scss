@@ -19,6 +19,18 @@
 		line-height: 1.1;
 
 	}
+
+	.uk-preserve,
+	>img {
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	.menu-logo {
+		position: absolute;
+		right: 50px;
+		bottom: 53px;
+	}
 }
 
 .uk-modal {

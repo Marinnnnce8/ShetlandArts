@@ -83,6 +83,7 @@
 
 	&:not(.has-cover) img {
 		transform: scale3d(1.05, 1.05, 1);
+		width: 100%;
 	}
 
 	.uk-button {
