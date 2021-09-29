@@ -13,28 +13,26 @@
 		z-index: 1025;
 		position: relative;
 
-		&:not(.uk-button-text) {
-			&::before {
-				position: absolute;
-				content: '';
-				right: 0;
-				left: auto;
-				top: auto;
-				width: calc(100% - 38px);
-				background-color: $primary;
-				height: 1px;
-				bottom: 0;
-				display: block;
-				opacity: 0;
-			}
+		&::before {
+			position: absolute;
+			content: '';
+			right: 0;
+			left: auto;
+			top: auto;
+			width: calc(100% - 38px);
+			background-color: $primary;
+			height: 1px;
+			bottom: 0;
+			display: block;
+			opacity: 0;
+		}
 
-			&::after {
-				display: none;
-			}
+		&::after {
+			display: none;
 		}
 
 		@include hover {
-			&:not(.uk-button-text)::before {
+			&::before {
 				opacity: 1;
 			}
 		}
@@ -42,14 +40,14 @@
 
 	.open-today {
 		text-transform: none;
-		padding-right: 0;
+		padding-right: 12px;
 		background-color: transparent;
 
 		&[aria-expanded='true'] {
 			color: $white;
 		}
 
-		&:not(.uk-button-text)::before {
+		&::before {
 			width: calc(100% - 68px);
 			transform: translateX(-15%);
 		}
@@ -96,6 +94,19 @@
 
 		.open-today {
 			margin-right: 30px;
+			padding-right: 0;
+		}
+	}
+
+	@media (max-width: $breakpoint-small-max) {
+		li .uk-button {
+			width: 44px;
+			height: 44px;
+		}
+
+		.open-today {
+			padding-top: 13px;
+			padding-bottom: 13px;
 		}
 	}
 }

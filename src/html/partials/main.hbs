@@ -90,7 +90,7 @@
 						</div>
 						<div class="uk-flex uk-flex-middle">
 							{{> renderNavigation items=menu active=page.name}}
-							<a href="#megamenu" class="uk-button toggle-button" aria-label="Open menu" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
+							<a href="#megamenu" class="uk-button uk-navbar-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
 							<div data-uk-modal class="uk-width-1-1 mega-menu" id="megamenu">
 								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
 									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
@@ -148,7 +148,7 @@
 										</li>
 									</ul>
 								</div>								
-								<button data-uk-close class="uk-button toggle-button uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
+								<button data-uk-close class="uk-button uk-navbar-toggle uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
 								<div class="uk-flex-wrap uk-modal-body" data-uk-grid="masonry: true">
 									<div>
 										<ul class="uk-list uk-margin-medium-bottom">
@@ -250,10 +250,69 @@
 							</div>							
 						</div>
 					</div>
-					<a href="#mmenu" class="uk-navbar-toggle uk-hidden@m" aria-label="Toggle Navigation">
-						<span data-uk-navbar-toggle-icon></span>
-						<span class="uk-hidden" data-uk-close></span>
-					</a>
+					<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-hidden@m">
+						<div class="uk-flex uk-flex-column">
+							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
+								<li class="uk-margin-small-right">
+									<a class="uk-button uk-button-small" href="#" aria-label="Contact">
+										{{>renderIcon name='letter' class="uk-margin-remove-left"}}
+									</a>
+								</li>
+								<li class="uk-margin-remove-top uk-margin-small-right">
+									<a class="uk-button uk-button-small" href="#" aria-label="Donate">
+										{{>renderIcon name='donate' class="uk-margin-remove-left"}}
+									</a>
+								</li>
+								<li class="uk-margin-remove-top">
+									<a class="uk-button uk-button-small" href="#" aria-label="Book Online">
+										{{>renderIcon name='tickets' class="uk-margin-remove-left"}}
+									</a>
+								</li>
+							</ul>
+							<div class="uk-flex uk-flex-right">
+								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
+								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+									<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
+										<div>
+											<div>
+												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
+												<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+												<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
+												<div class="uk-text-small uk-text-bold">Cafe hours:</div>
+												<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
+												<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
+											</div>
+										</div>
+										<div>
+											<div>
+												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
+												<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+												<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
+											</div>
+										</div>
+										<div>
+											<div>
+												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
+												<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
+											</div>
+										</div>
+										<div>
+											<div>
+												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
+												<div class="uk-text-small">Private hire only</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="uk-flex uk-flex-right">
+								{{!-- <a href="#megamenu" class="uk-button uk-navbar-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a> --}}
+								<a href="#mmenu" class="uk-navbar-toggle uk-margin-small-left" aria-label="Toggle Navigation">
+									<span class="uk-position-center" role="presentation"></span>
+								</a>								
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</nav>

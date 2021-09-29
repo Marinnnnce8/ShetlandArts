@@ -3,7 +3,7 @@
 	padding: 18px 35px;
 	justify-content: flex-start;
 
-	&:not(.uk-button-text)::before {
+	&::before {
 		background-color: $warning;
 	}
 
