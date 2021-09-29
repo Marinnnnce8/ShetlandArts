@@ -9,25 +9,234 @@
 		{
 			"name": "whats-on",
 			"title": "What’s on",
-			"url": "whats-on.html"
+			"url": "whats-on.html",
+			"children": [
+				{
+					"name": "today",
+					"title": "Today"
+				},
+				{
+					"name": "this-week",
+					"title": "This Week"
+				},
+				{
+					"name": "this-weekend",
+					"title": "This Weekend"
+				},
+				{
+					"name": "this-month",
+					"title": "This Month"
+				},
+				{
+					"name": "film",
+					"title": "Film"
+				},
+				{
+					"name": "music",
+					"title": "Music"
+				},
+				{
+					"name": "drama-and-dance",
+					"title": "Drama & Dance"
+				},
+				{
+					"name": "visual-art-and-craft",
+					"title": "Visual Art & Craft"
+				},
+				{
+					"name": "festivals",
+					"title": "Festivals"
+				},
+				{
+					"name": "literature",
+					"title": "Literature"
+				},
+				{
+					"name": "comedy",
+					"title": "Comedy"
+				},
+				{
+					"name": "events-and-workshops",
+					"title": "Events & Workshops"
+				},
+				{
+					"name": "memberships",
+					"title": "Memberships"
+				}
+			]
 		},
 		{
 			"name": "visit-us",
 			"title": "Visit us",
 			"children": [
 				{
-					"name": "child",
-					"title": "Child"
+					"name": "bonhoga",
+					"title": "Bonhoga"
+				},
+				{
+					"name": "the-garrison",
+					"title": "The Garrison"
+				},
+				{
+					"name": "mareel",
+					"title": "Mareel"
+				},
+				{
+					"name": "shetlandmade",
+					"title": "ShetlandMade"
+				},
+				{
+					"name": "the-booth",
+					"title": "The Booth"
+				},
+				{
+					"name": "access-information",
+					"title": "Access Information"
+				},
+				{
+					"name": "artists-information",
+					"title": "Artists Information"
 				}
 			]
 		},
 		{
 			"name": "projects",
-			"title": "Projects"
+			"title": "Projects",
+			"children": [
+				{
+					"name": "past-projects",
+					"title": "Past projects"
+				}
+			]
+		},
+		{
+			"name": "festivals",
+			"title": "Festivals",
+			"navClass": "uk-hidden@m",
+			"children": [
+				{
+					"name": "screenplay",
+					"title": "Screenplay"
+				},
+				{
+					"name": "wordplay",
+					"title": "Wordplay"
+				},
+				{
+					"name": "artists-information",
+					"title": "Artists Information"
+				}
+			]
+		},
+		{
+			"name": "exhibitions",
+			"title": "Exhibitions",
+			"navClass": "uk-hidden@m",
+			"children": [
+				{
+					"name": "past-exhibitions",
+					"title": "Past Exhibitions"
+				}
+			]
+		},
+		{
+			"name": "learn",
+			"title": "Learn",
+			"navClass": "uk-hidden@m",
+			"children": [
+				{
+					"name": "study-with-us",
+					"title": "Study with us"
+				},
+				{
+					"name": "youth-arts",
+					"title": "Youth Arts"
+				},
+				{
+					"name": "wellbeing-arts",
+					"title": "Wellbeing arts"
+				},
+				{
+					"name": "art-in-care",
+					"title": "Art in care"
+				},
+				{
+					"name": "schools-resources",
+					"title": "Schools resources"
+				}
+			]
+		},
+		{
+			"name": "hire",
+			"title": "Hire",
+			"navClass": "uk-hidden@m",
+			"children": [
+				{
+					"name": "meetings-and-conferences",
+					"title": "Meetings and conferences"
+				},
+				{
+					"name": "weddings-and-partnerships",
+					"title": "Weddings and partnerships"
+				},
+				{
+					"name": "event-hire",
+					"title": "Event hire"
+				},
+				{
+					"name": "cinema-hire",
+					"title": "Cinema hire"
+				},
+				{
+					"name": "recording-studio",
+					"title": "Recording studio"
+				}
+			]
 		},
 		{
 			"name": "about",
-			"title": "About"
+			"title": "About",
+			"children": [
+				{
+					"name": "people",
+					"title": "People"
+				},
+				{
+					"name": "media-centre",
+					"title": "Media centre"
+				},
+				{
+					"name": "governance",
+					"title": "Governance"
+				}
+			]
+		},
+		{
+			"name": "opportunities",
+			"title": "Opportunities",
+			"navClass": "uk-hidden@m",
+			"children": [
+				{
+					"name": "jobs",
+					"title": "Jobs"
+				},
+				{
+					"name": "volunteer",
+					"title": "Volunteer"
+				},
+				{
+					"name": "commissions",
+					"title": "Commissions"
+				},
+				{
+					"name": "funding",
+					"title": "Funding"
+				},
+				{
+					"name": "artists-resources",
+					"title": "Artists resources"
+				}
+			]
 		}
 	],
 	"social": [
@@ -38,6 +247,18 @@
 		{
 			"name": "twitter",
 			"url": "https://twitter.com/"
+		},
+		{
+			"name": "pinterest",
+			"url": "https://pinterest.com/"
+		},
+		{
+			"name": "instagram",
+			"url": "https://instagram.com/"
+		},
+		{
+			"name": "soundcloud",
+			"url": "https://soundcloud.com/"
 		}
 	],
 	"legal": [
@@ -46,6 +267,54 @@
 		"Privacy Policy",
 		"GDPR AND PRIVACY NOTICE",
 		"Disclaimer"
+	],
+	"footerTopLinks": [
+		{
+			"name": "tickets",
+			"url": "#",
+			"title": "Book Tickets"
+		},
+		{
+			"name": "donate",
+			"url": "#",
+			"title": "Donate"
+		},
+		{
+			"name": "member",
+			"url": "#",
+			"title": "Become a member"
+		},
+		{
+			"name": "signup",
+			"url": "#",
+			"title": "Sign up to our mailing list"
+		}
+	],
+	"footerBottomLinks": [
+		{
+			"url": "#",
+			"title": "Get Tickets"
+		},
+		{
+			"url": "#",
+			"title": "Donate"
+		},
+		{
+			"url": "#",
+			"title": "Get In Touch"
+		},
+		{
+			"url": "#",
+			"title": "About"
+		},
+		{
+			"url": "#",
+			"title": "Work For Us"
+		},
+		{
+			"url": "#",
+			"title": "Volunteer With Us"
+		}
 	],
 	"items": {
 		"children": [

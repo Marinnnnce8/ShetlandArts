@@ -344,30 +344,17 @@
 		<footer class="footer">
 			<div class="uk-container uk-container-xlarge">
 				<div class="footer-top">
-						<div class="uk-container uk-container-large">
-							<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
-								<a href="#" class="uk-h3 uk-margin-medium-top uk-margin-remove-bottom uk-text-uppercase uk-flex">
-									{{>renderIcon class="uk-hidden@s" name='tickets'}}
-									Book Tickets
-									{{>renderIcon class="uk-visible@s" name='tickets'}}
-								</a>
-								<a href="#" class="uk-h3 uk-margin-remove-bottom uk-text-uppercase uk-flex">
-									{{>renderIcon class="uk-hidden@s" name='donate'}}
-									Donate
-									{{>renderIcon class="uk-visible@s" name='donate'}}
-								</a>
-								<a href="#" class="uk-h3 uk-margin-remove-bottom uk-text-uppercase uk-flex">
-									{{>renderIcon class="uk-hidden@s" name='member'}}
-									Become a member
-									{{>renderIcon class="uk-visible@s" name='member'}}
-								</a>
-								<a href="#" class="uk-h3 uk-margin-remove-bottom uk-text-uppercase uk-flex">
-									{{>renderIcon class="uk-hidden@s" name='signup'}}
-									Sign up to our mailing list
-									{{>renderIcon class="uk-visible@s" name='signup'}}
-								</a>
-							</div>
+					<div class="uk-container uk-container-large">
+						<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+							{{#each footerTopLinks}}
+								<a href="{{url}}" class="uk-h3{{#if @first}} uk-margin-medium-top{{/if}} uk-margin-remove-bottom uk-text-uppercase uk-flex">
+									{{>renderIcon class="uk-hidden@s" name=name}}
+									{{title}}
+									{{>renderIcon class="uk-visible@s" name=name}}
+								</a>									
+							{{/each}}								
 						</div>
+					</div>
 				</div>
 
 				<div class="footer-middle">
@@ -406,54 +393,23 @@
 										</p>
 										<div class="share uk-position-relative uk-position-z-index uk-text-center uk-margin-top uk-grid-margin">
 											<ul class="uk-flex uk-flex-middle uk-flex-wrap uk-list">
-												<li class="uk-margin-small-top">
-													<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
-														{{> renderIcon name="facebook"}}
-													</a>
-												</li>
-												<li>
-													<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
-														{{> renderIcon name="twitter"}}
-													</a>
-												</li>
-												<li>
-													<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest page">
-														{{> renderIcon name="pinterest"}}
-													</a>
-												</li>
-												<li>
-													<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="mailto:#" aria-label="Contact us via email">
-														{{> renderIcon name="instagram"}}
-													</a>
-												</li>
-												<li>
-													<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="mailto:#" aria-label="Contact us via email">
-														{{> renderIcon name="soundcloud"}}
-													</a>
-												</li>
+												{{#each social}}
+													<li {{#if @first}}class="uk-margin-small-top"{{/if}}>
+														<a class="uk-flex uk-flex-middle uk-flex-center uk-border-circle uk-background-secondary social" href="{{url}}" target="_blank" rel="noopener noreferrer" aria-label="Visit our {{name}} page">
+															{{> renderIcon name=name}}
+														</a>
+													</li>
+												{{/each}}
 											</ul>
 										</div>
 									</div>
-									<div>
+									<div>									
 										<ul class="uk-list uk-padding-remove-left">
+											{{#each footerBottomLinks}}
 											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Get Tickets</a>
+												<a href="{{url}}" class="uk-h4 uk-text-bold uk-text-uppercase">{{title}}</a>									
 											</li>
-											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Donate</a>
-											</li>
-											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Get In Touch</a>
-											</li>
-											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">About</a>
-											</li>
-											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Work For Us</a>
-											</li>
-											<li>
-												<a href="#" class="uk-h4 uk-text-bold uk-text-uppercase">Volunteer With Us</a>
-											</li>
+											{{/each}}
 										</ul>
 									</div>
 								{{/inline}}
@@ -492,6 +448,8 @@
 
 	<div id="mmenu" class="uk-hidden">
 		{{> renderNavigation items=menu mobile=true active=page.name}}
+		<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
+		<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
 	</div>
 
 	<script src="./js/uikit.min.js"></script>
