@@ -4,16 +4,18 @@ $mm_transitionDelay: $speed;
 $mm_transitionFunction: $timing;
 
 // Colors
-$mm_backgroundColor: transparent;//$global-background;
-$mm_borderColor: transparent;//rgba($black, 0.05);
-$mm_dimmedTextColor: #fff;//rgba($black, 0.5);
+$mm_backgroundColor: transparent;
+$mm_borderColor: transparent;
+$mm_dimmedTextColor: $white;
 $mm_emphasizedBackgroundColor: transparent;
-$mm_highlightedBackgroundColor: transparent;//rgba($black, 0.05);
-$mm_navbarColor: #fff;//rgba($black, 0.5);
-$mm_textColor: #fff;//$black;
+$mm_highlightedBackgroundColor: transparent;
+$mm_navbarColor: $white;
+$mm_textColor: $white;
+$mm_textFontSize: 20px;
+$mm_textLineHeight: 1.1;
 
 // Positioning
-$mm_offsetTop: 80px;
+$mm_offsetTop: 109px;
 $mm_offsetRight: 0;
 $mm_offsetBottom: 0;
 $mm_offsetLeft: 0;

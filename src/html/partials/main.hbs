@@ -127,7 +127,7 @@
 											</div>
 										</div>
 									</div>
-									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
+									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 										<li>
 											<a class="uk-button uk-button-small" href="#">
 												{{>renderIcon class="uk-margin-small-right" name='letter'}}
@@ -254,20 +254,23 @@
 						<div class="uk-flex uk-flex-column">
 							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
 								<li class="uk-margin-small-right">
-									<a class="uk-button uk-button-small" href="#" aria-label="Contact">
+									<a class="uk-button uk-button-small uk-flex-column" href="#" aria-label="Contact">
 										{{>renderIcon name='letter' class="uk-margin-remove-left"}}
+										<span class="uk-text-uppercase">Contact</span>
 									</a>
 								</li>
 								<li class="uk-margin-remove-top uk-margin-small-right">
-									<a class="uk-button uk-button-small" href="#" aria-label="Donate">
+									<a class="uk-button uk-button-small uk-flex-column" href="#" aria-label="Donate">
 										{{>renderIcon name='donate' class="uk-margin-remove-left"}}
+										<span class="uk-text-uppercase">Donate</span>
 									</a>
 								</li>
 								<li class="uk-margin-remove-top">
-									<a class="uk-button uk-button-small" href="#" aria-label="Book Online">
+									<a class="uk-button uk-button-small uk-flex-column" href="#" aria-label="Book Online">
 										{{>renderIcon name='tickets' class="uk-margin-remove-left"}}
+										<span class="uk-text-uppercase">Book</span>
 									</a>
-								</li>
+								</li>				
 							</ul>
 							<div class="uk-flex uk-flex-right">
 								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
@@ -447,9 +450,13 @@
 
 		<div class="mmenu-overlay uk-hidden">
 			<div id="mmenu">
+				<form class="uk-search uk-search-default uk-margin-left">
+					<span class="uk-search-icon-flip" data-uk-search-icon></span>
+					<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
+				</form>			
 				{{> renderNavigation items=menu mobile=true active=page.name}}
-				<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
-				<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
+				{{!-- <img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
+				<img class="menu-logo uk-position-bottom-right" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo"> --}}
 			</div>
 			<div class="mmenu-bg"></div>
 		</div>

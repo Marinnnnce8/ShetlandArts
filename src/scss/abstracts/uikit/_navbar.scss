@@ -29,8 +29,8 @@
 .button-toggle,
 .uk-navbar-toggle {
 	background-color: transparent;
-	width: 50px;
-	height: 36px;
+	width: 56px;
+	height: 56px;
 	transition: $transition;
 
 	span {
@@ -103,8 +103,32 @@
 			}
 		}
 	}
-	@media (min-width: $breakpoint-medium) {
-		width: 56px;
-		height: 56px;
+
+	@media (max-width: $breakpoint-small-max) {
+		z-index: 1001;
+
+		&[aria-expanded='true'] {
+			transform: translateX(-4px);
+			border-radius: 50%;
+			background-color: $grey-dark;
+
+			svg {
+				display: none;
+			}
+
+			span {
+				transform: translate(-50%, -50%) rotate(45deg);
+				background-color: $white;
+
+				&::after {
+					opacity: 0;
+				}
+
+				&::before {
+					transform: rotate(-90deg) translate(-29%, -9%);
+					background-color: $white;
+				}
+			}
+		}
 	}
 }

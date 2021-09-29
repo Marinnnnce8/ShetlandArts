@@ -59,21 +59,29 @@ const main = {
 		const el = uk.$('#mmenu');
 		if (!el) return;
 
-        const menu = new Mmenu(el,
-            {
-                offCanvas: false,
-                extensions: [
-                    'border-full',
-                    'fullscreen'
-                ],
-            },
-            {
-                classNames: {
-                    selected: 'uk-active'
-                },
-                transitionDuration: 256
-            }
-        );
+		const menu = new Mmenu(el,
+			{
+				// navbars: [
+				// 	{
+				// 		"position": "top",
+				// 		"content": [
+				// 			'<div class="uk-flex uk-flex-left uk-flex-middle menu-back"><svg class="uk-margin-small-right" width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.65102 0.0263672L11.5977 1.96988L4.73061 8.94536L11.579 15.5776L9.47049 17.6824L0.766091 8.94536L9.65102 0.0263672Z" fill="white"/></svg><a href="#mm-0" class="uk-text-small">Back</a></div>'
+				// 		]
+				// 	}
+				// ],
+				offCanvas: false,
+				extensions: [
+					'border-full',
+					'fullscreen'
+				],
+			},
+			{
+				classNames: {
+					selected: 'uk-active'
+				},
+				transitionDuration: 256
+			}
+		);
 
 		uk.removeClass(uk.$('.mmenu-overlay'), 'uk-hidden');
 
@@ -87,10 +95,10 @@ const main = {
 			};
 
 			menu.API.bind('close:start', () => toggler(false));
-			            uk.on(toggle, 'click', () => {
+			uk.on(toggle, 'click', () => {
 
-                toggler(!uk.hasClass(toggle, 'uk-open'))
-            });
+				toggler(!uk.hasClass(toggle, 'uk-open'))
+			});
 		}
 	}
 };

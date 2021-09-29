@@ -1,7 +1,7 @@
 {{#*inline "nav"}}
 {{#each items}}
 	{{#with this}}
-	<li class="{{#if children}}uk-parent{{/if}}{{#if navClass}} {{navClass}}{{/if}}{{#if (eq ../active name)}} uk-active{{/if}}">
+	<li class="{{#if children}}uk-parent uk-text-uppercase{{/if}}{{#if navClass}} {{navClass}}{{/if}}{{#if (eq ../active name)}} uk-active{{/if}}">
 		<a href="{{default url "#"}}">{{title}}</a>
 		{{#if children}}
 		{{> renderNavigation items=children mobile=../mobile active=../active level=1}}
@@ -12,7 +12,6 @@
 {{/inline}}
 
 {{#if mobile}}{{!-- Mobile / Mobile Sub --}}
-
 <ul>
 	{{#>nav}}{{/nav}}
 </ul>

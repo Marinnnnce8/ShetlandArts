@@ -15,10 +15,10 @@
 	cursor: zoom-in;
 }
 
-p,
-li {
+.content p,
+.content li {
 
-	a:not(.uk-accordion-title):not(.social):hover,
+	a:not(.uk-accordion-title):hover,
 	.uk-link:hover,
 	.uk-link-toggle:hover .uk-link,
 	.uk-link-toggle:focus .uk-link {
