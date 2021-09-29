@@ -90,7 +90,7 @@
 						</div>
 						<div class="uk-flex uk-flex-middle">
 							{{> renderNavigation items=menu active=page.name}}
-							<a href="#megamenu" class="uk-button uk-navbar-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
+							<a href="#megamenu" class="uk-button button-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
 							<div data-uk-modal class="uk-width-1-1 mega-menu" id="megamenu">
 								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
 									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
@@ -148,7 +148,7 @@
 										</li>
 									</ul>
 								</div>								
-								<button data-uk-close class="uk-button uk-navbar-toggle uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
+								<button data-uk-close class="uk-button button-toggle uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
 								<div class="uk-flex-wrap uk-modal-body" data-uk-grid="masonry: true">
 									<div>
 										<ul class="uk-list uk-margin-medium-bottom">
@@ -271,7 +271,7 @@
 							</ul>
 							<div class="uk-flex uk-flex-right">
 								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
-								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -60" class="uk-width-1-1">
 									<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 										<div>
 											<div>
@@ -306,8 +306,7 @@
 								</div>
 							</div>
 							<div class="uk-flex uk-flex-right">
-								{{!-- <a href="#megamenu" class="uk-button uk-navbar-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a> --}}
-								<a href="#mmenu" class="uk-navbar-toggle uk-margin-small-left" aria-label="Toggle Navigation">
+								<a href="#mmenu" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation">
 									<span class="uk-position-center" role="presentation"></span>
 								</a>								
 							</div>
