@@ -59,36 +59,38 @@ const main = {
 		const el = uk.$('#mmenu');
 		if (!el) return;
 
-		const menu = new Mmenu(el,
-			{
-				extensions: [
-					'border-full',
-					'fullscreen',
-					'position-front',
-				],
-			},
-			{
-				classNames: {
-					selected: 'uk-active'
-				},
-				transitionDuration: 256
-			}
-		);
+        const menu = new Mmenu(el,
+            {
+                offCanvas: false,
+                extensions: [
+                    'border-full',
+                    'fullscreen'
+                ],
+            },
+            {
+                classNames: {
+                    selected: 'uk-active'
+                },
+                transitionDuration: 256
+            }
+        );
 
-		uk.removeClass(el, 'uk-hidden');
+		uk.removeClass(uk.$('.mmenu-overlay'), 'uk-hidden');
 
 		const toggle = uk.$('.uk-navbar-toggle');
+		const html = uk.$("html");
 		if (toggle) {
 
-			const toggleIcons = uk.$$('span', toggle);
 			const toggler = (open) => {
 				uk[`${open ? 'add' : 'remove'}Class`](toggle, 'uk-open');
-				uk.addClass(toggleIcons[open ? 0 : 1], 'uk-hidden');
-				uk.removeClass(toggleIcons[open ? 1 : 0], 'uk-hidden');
+				uk[`${open ? 'add' : 'remove'}Class`](html, 'show-menu');
 			};
 
 			menu.API.bind('close:start', () => toggler(false));
-			uk.on(toggle, 'click', () => toggler(!uk.hasClass(this, 'uk-open')));
+			            uk.on(toggle, 'click', () => {
+
+                toggler(!uk.hasClass(toggle, 'uk-open'))
+            });
 		}
 	}
 };

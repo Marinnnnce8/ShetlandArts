@@ -19,7 +19,7 @@
 </head>
 <body>
 
-	<div>
+	<div class="main-wrap">
 
 		<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
 			<nav class="uk-navbar-container uk-navbar-transparent uk-navbar" data-uk-navbar>
@@ -67,7 +67,7 @@
 									</div>
 								</div>
 							</div>
-							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top  uk-margin-remove-bottom">
+							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 								<li>
 									<a class="uk-button uk-button-small" href="#">
 										{{>renderIcon class="uk-margin-small-right" name='letter'}}
@@ -306,9 +306,9 @@
 								</div>
 							</div>
 							<div class="uk-flex uk-flex-right">
-								<a href="#mmenu" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation">
+								<a href="#" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation" data-uk-toggle="target: #mmenu;cls: menu-hidden;">
 									<span class="uk-position-center" role="presentation"></span>
-								</a>								
+								</a>
 							</div>
 						</div>
 					</div>
@@ -444,12 +444,15 @@
 				</div>
 			</div>
 		</footer>
-	</div>
 
-	<div id="mmenu" class="uk-hidden">
-		{{> renderNavigation items=menu mobile=true active=page.name}}
-		<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
-		<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
+		<div class="mmenu-overlay uk-hidden">
+			<div id="mmenu">
+				{{> renderNavigation items=menu mobile=true active=page.name}}
+				<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
+				<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
+			</div>
+			<div class="mmenu-bg"></div>
+		</div>
 	</div>
 
 	<script src="./js/uikit.min.js"></script>

@@ -4,13 +4,13 @@ $mm_transitionDelay: $speed;
 $mm_transitionFunction: $timing;
 
 // Colors
-$mm_backgroundColor: $global-background;
-$mm_borderColor: rgba($black, 0.05);
-$mm_dimmedTextColor: rgba($black, 0.5);
-$mm_emphasizedBackgroundColor: rgba($global-muted-background, 0.4);
-$mm_highlightedBackgroundColor: rgba($black, 0.05);
-$mm_navbarColor: rgba($black, 0.5);
-$mm_textColor: $black;
+$mm_backgroundColor: transparent;//$global-background;
+$mm_borderColor: transparent;//rgba($black, 0.05);
+$mm_dimmedTextColor: #fff;//rgba($black, 0.5);
+$mm_emphasizedBackgroundColor: transparent;
+$mm_highlightedBackgroundColor: transparent;//rgba($black, 0.05);
+$mm_navbarColor: #fff;//rgba($black, 0.5);
+$mm_textColor: #fff;//$black;
 
 // Positioning
 $mm_offsetTop: 80px;
@@ -19,7 +19,7 @@ $mm_offsetBottom: 0;
 $mm_offsetLeft: 0;
 
 // Sizes
-$mm_listitemSize: 44px;
+$mm_listitemSize: 50px;
 $mm_btnSize: 50px;
 $mm_padding: $global-small-margin;
 $mm_lineHeight: $global-margin;

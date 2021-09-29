@@ -15,7 +15,6 @@
 	cursor: zoom-in;
 }
 
-
 p,
 li {
 
@@ -25,4 +24,8 @@ li {
 	.uk-link-toggle:focus .uk-link {
 		@include link-hover($primary);
 	}
+}
+
+.main-wrap {
+	overflow-x: hidden;
 }

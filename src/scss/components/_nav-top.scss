@@ -10,7 +10,6 @@
 
 	.open-today,
 	ul .uk-button {
-		z-index: 1025;
 		position: relative;
 
 		&::before {
@@ -99,6 +98,12 @@
 	}
 
 	@media (max-width: $breakpoint-small-max) {
+
+		.open-today,
+		ul .uk-button {
+			z-index: 1025;
+		}
+
 		li .uk-button {
 			width: 44px;
 			height: 44px;
