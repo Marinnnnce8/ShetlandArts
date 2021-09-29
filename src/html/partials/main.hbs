@@ -274,7 +274,7 @@
 							</ul>
 							<div class="uk-flex uk-flex-right">
 								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
-								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -60" class="uk-width-1-1">
+								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1">
 									<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 										<div>
 											<div>
@@ -308,7 +308,52 @@
 									</div>
 								</div>
 							</div>
-							<div class="uk-flex uk-flex-right">
+							<div class="uk-flex uk-flex-right uk-flex-middle">
+								<button class="button-search uk-button uk-flex uk-flex-center uk-flex-middle" aria-label="Check what's open today">
+									{{>renderIcon name="search" class="uk-margin-remove-left"}}
+								</button>
+								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -170" class="uk-width-1-1 search-menu">
+									<div class="uk-flex uk-flex-right">
+										<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
+										<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1">
+											<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
+												<div>
+													<div>
+														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
+														<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+														<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
+														<div class="uk-text-small uk-text-bold">Cafe hours:</div>
+														<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
+														<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
+													</div>
+												</div>
+												<div>
+													<div>
+														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
+														<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
+														<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
+													</div>
+												</div>
+												<div>
+													<div>
+														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
+														<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
+													</div>
+												</div>
+												<div>
+													<div>
+														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
+														<div class="uk-text-small">Private hire only</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+									<form class="uk-search uk-search-default uk-margin-left">
+										<span class="uk-search-icon-flip" data-uk-search-icon></span>
+										<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
+									</form>																	
+								</div>
 								<a href="#" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation" data-uk-toggle="target: #mmenu;cls: menu-hidden;">
 									<span class="uk-position-center" role="presentation"></span>
 								</a>
@@ -450,7 +495,7 @@
 
 		<div class="mmenu-overlay uk-hidden">
 			<div id="mmenu">
-				<form class="uk-search uk-search-default uk-margin-left">
+				<form class="uk-search uk-search-default uk-margin-left uk-hidden@m">
 					<span class="uk-search-icon-flip" data-uk-search-icon></span>
 					<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
 				</form>			

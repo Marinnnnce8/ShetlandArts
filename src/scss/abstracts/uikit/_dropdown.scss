@@ -22,6 +22,7 @@
 	}
 
 	@media (max-width: $breakpoint-small-max) {
+		z-index: 1029;
 
 		*+.uk-grid-margin,
 		.uk-grid+.uk-grid,

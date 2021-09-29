@@ -98,10 +98,8 @@
 	}
 
 	@media (max-width: $breakpoint-small-max) {
-
-		.open-today,
 		ul .uk-button {
-			z-index: 1025;
+			z-index: 1031;
 		}
 
 		li .uk-button {
@@ -124,6 +122,7 @@
 			padding-bottom: 13px;
 			border-top-left-radius: 25px;
 			border-top-right-radius: 25px;
+			z-index: 1025;
 			overflow: visible;
 
 			&::before {
