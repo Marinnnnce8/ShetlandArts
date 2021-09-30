@@ -9,13 +9,15 @@
 				</div>
 				<div class="uk-flex uk-flex-middle uk-flex-wrap uk-width-2-3@m uk-visible@m">
 					<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap">
-						{{!-- <li class="uk-margin-small-right uk-margin-top">
-							<span class="calendar uk-text-uppercase uk-text-bold uk-border-pill uk-flex-inline uk-flex-middle uk-position-relative">
-								{{>renderIcon class="uk-hidden@s" name='calendar'}}
-								<input type="date" id="myDate" value="mm/dd/yyyy" class="uk-position-cover uk-position-z-index uk-border-pill">
-								{{>renderIcon class="uk-hidden@s" name='caret-down'}}
-							</span>
-						</li> --}}
+						<li class="uk-margin-small-right uk-margin-top">
+							<input type="text" id="basicDate" placeholder="Please select Date Time" data-input>						
+							{{!-- <div id="calendar">
+								<span class="calendar uk-text-uppercase uk-text-bold uk-border-pill uk-flex-inline uk-flex-middle uk-position-relative">
+									{{>renderIcon name='calendar'}}
+									{{>renderIcon name='caret-down'}}
+								</span>
+							</div> --}}
+						</li>
 						<li class="uk-margin-small-right uk-margin-top"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-large">Today</button></li>
 						<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-large">This week</button></li>
 						<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-large">This Month</button></li>

@@ -22,6 +22,7 @@
     "rf": "gulp rf"
   },
   "dependencies": {
+    "flatpickr": "^4.6.9",
     "mmenu-js": "^8.5.24",
     "uikit": "^3.7.3"
   },

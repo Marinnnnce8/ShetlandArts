@@ -20,3 +20,8 @@ export function uikitJs() {
 export function mmenuJs() {
 	return gulp.src('node_modules/mmenu-js/dist/mmenu.js').pipe(gulp.dest(dest));
 }
+
+// tasks.flatpickrJs
+export function flatpickrJs() {
+	return gulp.src('node_modules/flatpickr/dist/flatpickr.min.js').pipe(gulp.dest(dest));
+}

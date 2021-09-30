@@ -1,0 +1,35 @@
+.flatpickr-calendar {
+	background-color: $primary;
+	max-width: 374px;
+	max-height: 371px;
+
+	* {
+		letter-spacing: .04em;
+		color: $white;
+		font-family: $font-default;
+		text-transform: uppercase;
+	}
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+	color: $white;
+}
+
+span.flatpickr-weekday {
+	color: $white;
+	font-size: 20px;
+}
+
+span.flatpickr-weekday,
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+	font-weight: $bold;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+	font-size: 26px;
+}
+
+.flatpickr-day {
+	font-size: 18px;
+}

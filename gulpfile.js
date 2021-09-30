@@ -10,6 +10,7 @@ const config = pkg.config;
 export const build = gulp.series(
 	tasks.uikitJs,
 	tasks.mmenuJs,
+	tasks.flatpickrJs,
 	tasks.assets,
 	tasks.icons,
 	tasks.html,

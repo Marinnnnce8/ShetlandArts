@@ -79,3 +79,14 @@ $transition: $speed $timing;
 
 @import 'mmenu/variables';
 @import 'mmenu/mmenu';
+
+//
+// Flatpickr
+// https://flatpickr.js.org/
+//
+// Imports Flatpickr style overrides for the theme
+// These may be used by flatpickr.scss
+//
+// ========================================================================
+
+@import 'flatpickr/flatpickr';

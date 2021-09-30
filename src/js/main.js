@@ -57,6 +57,8 @@ const main = {
 
 		main.openSearch();
 
+		main.initFlatpickr();
+
 		nb.profilerStop('main.init');
 	},
 
@@ -124,7 +126,7 @@ const main = {
 		// 		uk.addClass(html, 'uk-modal-page');
 		// 	}, 2000);
 		// })
-			
+
 		// uk.on(el, 'hidden', () => {
 		// 	setTimeout(function () {
 		// 		// uk.removeClass(html, 'uk-modal-page');
@@ -155,6 +157,14 @@ const main = {
 		uk.on(el, 'shown', () => {
 			uk.addClass(html, 'html-search-active');
 		})
+	},
+
+	initFlatpickr: () => {
+		flatpickr("#basicDate", {
+			altInput: true,
+			altFormat: "F j, Y",
+			dateFormat: "Y-m-d"
+		});
 	}
 };
 
