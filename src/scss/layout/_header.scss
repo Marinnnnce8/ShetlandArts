@@ -7,10 +7,6 @@
 
 	a {
 		transition: $transition;
-
-		@include hover {
-			box-shadow: none !important;
-		}
 	}
 
 	@media (min-width: $breakpoint-large) {

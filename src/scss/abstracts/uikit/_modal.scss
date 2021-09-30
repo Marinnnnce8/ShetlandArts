@@ -3,7 +3,6 @@
 		color: $white;
 
 		@include hover {
-			box-shadow: none !important;
 			color: $primary;
 		}
 	}

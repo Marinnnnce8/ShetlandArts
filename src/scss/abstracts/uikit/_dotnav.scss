@@ -1,7 +1,3 @@
 @mixin hook-dotnav-item {
 	border: 0;
-
-	@include hover {
-		box-shadow: none !important;
-	}
 }
