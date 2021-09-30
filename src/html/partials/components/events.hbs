@@ -30,7 +30,7 @@
 						<li class="uk-visible@m uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-large">Comedy</button></li>
 						<li class="uk-visible@m uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-large">Events & Workshops</button></li>
 					</ul>
-					<div data-uk-form-custom="target: > * > span:first-child" class="uk-hidden@m uk-width-1-1">
+					{{!-- <div data-uk-form-custom="target: > * > span:first-child" class="uk-hidden@m uk-width-1-1">
 						<select>
 							<option value="">Categories</option>
 							<option value="1">This week</option>
@@ -51,9 +51,35 @@
 							{{>renderIcon name='folder'}}
 							{{>renderIcon name='caret-down'}}
 						</button>
-					</div>					
+					</div>					 --}}
 				</div>
 			</div>
 		{{/inline}}
-	{{/ukContainer}}	
+	{{/ukContainer}}
+	<div class="uk-hidden@m uk-width-1-1">
+		<button class="uk-button uk-flex-left list-button uk-margin-auto uk-flex-between">
+			<div>
+				{{>renderIcon name='folder' class="uk-margin-right"}}
+				Categories
+			</div>
+			{{>renderIcon name='caret-down'}}							
+		</button>
+		<div class="uk-border-rounded uk-position-relative" data-uk-dropdown="mode: click; pos: bottom-justify">
+			<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap">
+				<li class="uk-margin-small-right uk-margin-small-top"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Today</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">This week</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">This Month</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">All</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Film</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Music</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Drama & Dance</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Visual Art & Craft</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Exhibitions</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Festivals</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Literature</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Comedy</button></li>
+				<li class="uk-margin-small-right"><button class="uk-text-uppercase uk-text-bold uk-border-pill uk-button uk-button-small">Events & Workshops</button></li>
+			</ul>							
+		</div>
+	</div>
 </section>

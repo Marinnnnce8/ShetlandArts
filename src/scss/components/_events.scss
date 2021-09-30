@@ -27,9 +27,8 @@
 	}
 
 	.uk-h1 {
-		font-size: 67px;
-		line-height: 83%;
-		letter-spacing: -.02em;
+		font-size: 87px;
+		line-height: 90%;
 		margin-bottom: 35px;
 
 		svg {
@@ -43,25 +42,51 @@
 		margin-top: 20px;
 	}
 
-	.uk-form-custom .uk-button {
-		padding-left: 95px;
-		max-width: 320px;
+	.list-button {
+		max-width: calc(100% - 60px);
+		border-radius: 34px;
 		width: 100%;
 
-		svg {
-			top: 50%;
-			transform: translateY(-50%);
-			position: absolute;
+		.icon-caret-down {
+			transition: $transition;
+			width: 12px;
 		}
 
 		.icon-folder {
 			width: 34px;
-			left: 40px;
 		}
 
-		.icon-caret-down {
-			right: 27px;
-			width: 12px;
+		&[aria-expanded='true'] {
+			background-color: $primary;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+			color: $white;
+
+			.icon-caret-down {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.uk-dropdown {
+		background-color: $primary;
+		padding: 20px 20px 25px;
+		width: 100vw !important;
+
+		&::before {
+			position: absolute;
+			left: 30px;
+			width: calc(100% - 60px);
+			height: 22px;
+			background-color: $primary;
+			content: '';
+			display: block;
+			bottom: calc(100% - 1px);
+			pointer-events: none;
+		}
+
+		.uk-button {
+			font-size: 16px;
 		}
 	}
 
@@ -69,7 +94,6 @@
 		padding-top: 70px;
 
 		.uk-h1 {
-			font-size: 87px;
 			margin-right: 20px;
 		}
 

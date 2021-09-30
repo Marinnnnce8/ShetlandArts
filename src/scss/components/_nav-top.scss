@@ -42,8 +42,16 @@
 		padding-right: 22px;
 		background-color: transparent;
 
+		.icon-caret-down {
+			transition: $transition;
+		}
+
 		&[aria-expanded='true'] {
 			color: $white;
+
+			.icon-caret-down {
+				transform: rotate(180deg);
+			}
 		}
 
 		&::before {
