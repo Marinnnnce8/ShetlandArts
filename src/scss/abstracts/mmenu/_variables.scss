@@ -32,10 +32,10 @@ $mm_panelPadding: $mm_padding * 2;
 $mm_subopenWidth: $mm_btnSize;
 $mm_subpanelOffset: 30%;
 
-$mm_menuWidth: 0.8;
+$mm_menuWidth: .8;
 $mm_menuMinWidth: 240px;
 $mm_menuMaxWidth: 440px;
-$mm_menuHeight: 0.8;
+$mm_menuHeight: .8;
 $mm_menuMinHeight: 140px;
 $mm_menuMaxHeight: calc(100vh - 80px);
 
@@ -43,7 +43,7 @@ $mm_opt_screenreader: true;
 
 $mm_counterWidth: $mm_btnSize;
 
-$mm_dropdownShadow: 0 2px $global-small-margin rgba($black, 0.3);
+$mm_dropdownShadow: 0 2px $global-small-margin rgba($black, .3);
 $mm_dropdownTipX: $global-margin;
 $mm_dropdownTipY: $global-small-margin;
 
@@ -66,6 +66,6 @@ $mm_fullscreen_full: 1;
 $mm_fullscreen_min: 140px;
 $mm_fullscreen_max: 10000px;
 
-$mm_pagedimOpacity: 0.3;
+$mm_pagedimOpacity: .3;
 $mm_pagedimDelay: $speed;
-$mm_popupShadow: 0 2px $global-small-margin rgba($black, 0.3);
+$mm_popupShadow: 0 2px $global-small-margin rgba($black, .3);

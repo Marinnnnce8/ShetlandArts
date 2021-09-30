@@ -34,38 +34,39 @@
 					<div id="nav" class="uk-visible@m">
 						<div class="uk-flex uk-flex-middle uk-flex-right nav-top">
 							<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
-							<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+							<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1 open-today-menu">
 								<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 									<div>
-										<div>
-											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
-											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-											<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
-											<div class="uk-text-small uk-text-bold">Cafe hours:</div>
-											<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
-											<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
-										</div>
+										<ul class="uk-list">
+											<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</li>
+											<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+											<li class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</li>
+											<li class="uk-text-small uk-text-bold">Cafe hours:</li>
+											<li class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</li>
+											<li class="uk-text-small">Fri, Sat:  10am - 11pm</li>
+										</ul>
 									</div>
 									<div>
-										<div>
-											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
-											<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-											<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
-										</div>
+										<ul class="uk-list">
+											<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</li>
+											<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+											<li class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</li>
+										</ul>
 									</div>
 									<div>
-										<div>
-											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
-											<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
-										</div>
+										<ul class="uk-list">
+											<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</li>
+											<li class="uk-text-small">Various throughout the year - check out our listings for more information.</li>
+										</ul>
 									</div>
 									<div>
-										<div>
-											<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
-											<div class="uk-text-small">Private hire only</div>
-										</div>
+										<ul class="uk-list">
+											<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</li>
+											<li class="uk-text-small">Private hire only</li>
+										</ul>
 									</div>
 								</div>
+								<div class="dropdown-bg" role="presentation"></div>
 							</div>
 							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 								<li>
@@ -94,38 +95,39 @@
 							<div data-uk-modal class="uk-width-1-1 mega-menu" id="megamenu">
 								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
 									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
-									<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1">
+									<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1 open-today-menu">
 										<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 											<div>
-												<div>
-													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
-													<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-													<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
-													<div class="uk-text-small uk-text-bold">Cafe hours:</div>
-													<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
-													<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
-												</div>
+												<ul class="uk-list">
+													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</li>
+													<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+													<li class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</li>
+													<li class="uk-text-small uk-text-bold">Cafe hours:</li>
+													<li class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</li>
+													<li class="uk-text-small">Fri, Sat:  10am - 11pm</li>
+												</ul>
 											</div>
 											<div>
-												<div>
-													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
-													<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-													<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
-												</div>
+												<ul class="uk-list">
+													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</li>
+													<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+													<li class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</li>
+												</ul>
 											</div>
 											<div>
-												<div>
-													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
-													<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
-												</div>
+												<ul class="uk-list">
+													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</li>
+													<li class="uk-text-small">Various throughout the year - check out our listings for more information.</li>
+												</ul>
 											</div>
 											<div>
-												<div>
-													<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
-													<div class="uk-text-small">Private hire only</div>
-												</div>
+												<ul class="uk-list">
+													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</li>
+													<li class="uk-text-small">Private hire only</li>
+												</ul>
 											</div>
 										</div>
+										<div class="dropdown-bg" role="presentation"></div>
 									</div>
 									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 										<li>
@@ -241,6 +243,7 @@
 								</div>
 								<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
 								<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
+								<div class="modal-bg" role="presentation"></div>
 							</div>
 							<div class="uk-visible@m">
 								<form class="uk-search uk-search-default">
@@ -274,38 +277,39 @@
 							</ul>
 							<div class="uk-flex uk-flex-right">
 								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
-								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1">
+								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1 open-today-menu">
 									<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 										<div>
-											<div>
-												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
-												<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-												<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
-												<div class="uk-text-small uk-text-bold">Cafe hours:</div>
-												<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
-												<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
-											</div>
+											<ul class="uk-list">
+												<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</li>
+												<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+												<li class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</li>
+												<li class="uk-text-small uk-text-bold">Cafe hours:</li>
+												<li class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</li>
+												<li class="uk-text-small">Fri, Sat:  10am - 11pm</li>
+											</ul>
 										</div>
 										<div>
-											<div>
-												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
-												<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-												<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
-											</div>
+											<ul class="uk-list">
+												<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</li>
+												<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+												<li class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</li>
+											</ul>
 										</div>
 										<div>
-											<div>
-												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
-												<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
-											</div>
+											<ul class="uk-list">
+												<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</li>
+												<li class="uk-text-small">Various throughout the year - check out our listings for more information.</li>
+											</ul>
 										</div>
 										<div>
-											<div>
-												<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
-												<div class="uk-text-small">Private hire only</div>
-											</div>
+											<ul class="uk-list">
+												<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</li>
+												<li class="uk-text-small">Private hire only</li>
+											</ul>
 										</div>
 									</div>
+									<div class="dropdown-bg" role="presentation"></div>
 								</div>
 							</div>
 							<div class="uk-flex uk-flex-right uk-flex-middle">
@@ -315,44 +319,46 @@
 								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -170" class="uk-width-1-1 search-menu">
 									<div class="uk-flex uk-flex-right">
 										<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
-										<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1">
+										<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1 open-today-menu">
 											<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 												<div>
-													<div>
-														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</div>
-														<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-														<div class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</div>
-														<div class="uk-text-small uk-text-bold">Cafe hours:</div>
-														<div class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</div>
-														<div class="uk-text-small">Fri, Sat:  10am - 11pm</div>
-													</div>
+													<ul class="uk-list">
+														<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</li>
+														<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+														<li class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</li>
+														<li class="uk-text-small uk-text-bold">Cafe hours:</li>
+														<li class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</li>
+														<li class="uk-text-small">Fri, Sat:  10am - 11pm</li>
+													</ul>
 												</div>
 												<div>
-													<div>
-														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</div>
-														<div class="uk-text-small uk-text-bold">Wednesday to Sunday</div>
-														<div class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</div>
-													</div>
+													<ul class="uk-list">
+														<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</li>
+														<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
+														<li class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</li>
+													</ul>
 												</div>
 												<div>
-													<div>
-														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</div>
-														<div class="uk-text-small">Various throughout the year - check out our listings for more information.</div>
-													</div>
+													<ul class="uk-list">
+														<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</li>
+														<li class="uk-text-small">Various throughout the year - check out our listings for more information.</li>
+													</ul>
 												</div>
 												<div>
-													<div>
-														<div class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</div>
-														<div class="uk-text-small">Private hire only</div>
-													</div>
+													<ul class="uk-list">
+														<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</li>
+														<li class="uk-text-small">Private hire only</li>
+													</ul>
 												</div>
 											</div>
+											<div class="dropdown-bg" role="presentation"></div>
 										</div>
 									</div>									
 									<form class="uk-search uk-search-default uk-margin-left">
 										<span class="uk-search-icon-flip" data-uk-search-icon></span>
 										<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
-									</form>																	
+									</form>		
+									<div class="dropdown-bg" role="presentation"></div>															
 								</div>
 								<a href="#" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation" data-uk-toggle="target: #mmenu;cls: menu-hidden;">
 									<span class="uk-position-center" role="presentation"></span>
@@ -506,10 +512,11 @@
 					<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
 				</form>			
 				{{> renderNavigation items=menu mobile=true active=page.name}}
-				{{!-- <img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
-				<img class="menu-logo uk-position-bottom-right" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo"> --}}
 			</div>
-			<div class="mmenu-bg"></div>
+			<div class="mmenu-bg" role="presentation">
+				<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
+				<img class="menu-logo uk-position-bottom-right uk-margin-right" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
+			</div>
 		</div>
 	</div>
 

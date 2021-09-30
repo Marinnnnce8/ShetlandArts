@@ -51,6 +51,12 @@ const main = {
 
 		main.mmenu();
 
+		main.modalDropdown();
+
+		main.openDropdown();
+
+		main.openSearch();
+
 		nb.profilerStop('main.init');
 	},
 
@@ -100,6 +106,55 @@ const main = {
 				toggler(!uk.hasClass(toggle, 'uk-open'))
 			});
 		}
+	},
+
+	modalDropdown: () => {
+
+		const el = uk.$('#megamenu');
+		const html = uk.$("html");
+		if (!el) return;
+
+
+		uk.on(el, 'shown', () => {
+			uk.addClass(html, 'html-modal-active');
+		})
+
+		// uk.on(el, 'hide', () => {
+		// 	setTimeout(function () {
+		// 		uk.addClass(html, 'uk-modal-page');
+		// 	}, 2000);
+		// })
+			
+		// uk.on(el, 'hidden', () => {
+		// 	setTimeout(function () {
+		// 		// uk.removeClass(html, 'uk-modal-page');
+		// 		uk.removeClass(html, 'html-modal-active');
+		// 	}, 3000);
+		// })
+	},
+
+	openDropdown: () => {
+
+		const el = uk.$('.open-today-menu');
+		const html = uk.$("html");
+		if (!el) return;
+
+
+		uk.on(el, 'shown', () => {
+			uk.addClass(html, 'html-dropdown-active');
+		})
+	},
+
+	openSearch: () => {
+
+		const el = uk.$('.search-menu');
+		const html = uk.$("html");
+		if (!el) return;
+
+
+		uk.on(el, 'shown', () => {
+			uk.addClass(html, 'html-search-active');
+		})
 	}
 };
 
