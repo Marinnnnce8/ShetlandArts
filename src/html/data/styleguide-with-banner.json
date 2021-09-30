@@ -3,9 +3,9 @@
 		"name": "nb-styleguide"
 	},
 	"styleguide": true,
-	"h1": "Heading 1",
+	"h1": "General internal page with Style guide",
 	"banner": {
-		"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg"
+		"src": "./img/hero.png"
 	},
 	"breadcrumbs": [
 		{

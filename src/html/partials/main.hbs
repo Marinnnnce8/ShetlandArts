@@ -19,7 +19,7 @@
 </head>
 <body>
 
-	<div class="main-wrap">
+	<div>
 
 		<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
 			<nav class="uk-navbar-container uk-navbar-transparent uk-navbar" data-uk-navbar>
@@ -369,8 +369,14 @@
 
 			{{#if page.banner}}
 				{{> banner}}
-			{{else if page.homeBanner}}
-				{{> homeBanner}}
+				{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
+					{{#*inline "out"}}
+						{{> ukBreadcrumb}}					
+						<h1>{{page.h1}}</h1>
+					{{/inline}}
+				{{/ukContainer}}
+			{{else if page.sliderBanner}}
+				{{> sliderBanner}}
 			{{else}}
 				{{#if page.styleguide}}
 					<div class="share-sticky uk-flex uk-flex-right uk-visible@l" data-uk-sticky="offset: 100">
