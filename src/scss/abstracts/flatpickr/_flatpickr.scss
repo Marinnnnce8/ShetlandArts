@@ -1,7 +1,30 @@
+@mixin hover {
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.uk-open,
+	&.uk-active {
+		@content;
+	}
+}
+
+.flatpickr-calendar.arrowTop::after,
+.flatpickr-calendar::before {
+	display: none;
+}
+
+
 .flatpickr-calendar {
 	background-color: $primary;
-	max-width: 374px;
+	max-width: 380px;
 	max-height: 371px;
+	border-bottom-left-radius: 34px;
+	border-bottom-right-radius: 34px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 34px;
+	box-shadow: none;
+	margin-top: -2px;
 
 	* {
 		letter-spacing: .04em;
@@ -9,11 +32,21 @@
 		font-family: $font-default;
 		text-transform: uppercase;
 	}
+
+	@media (min-width: $breakpoint-medium) {
+		border-top-left-radius: 0;
+		border-top-right-radius: 34px;
+	}
 }
 
 .flatpickr-months .flatpickr-prev-month svg,
 .flatpickr-months .flatpickr-next-month svg {
-	color: $white;
+	fill: $white;
+	transition: $transition;
+
+	@include hover {
+		fill: $black;
+	}
 }
 
 span.flatpickr-weekday {
@@ -26,10 +59,43 @@ span.flatpickr-weekday,
 	font-weight: $bold;
 }
 
-.flatpickr-current-month .flatpickr-monthDropdown-months {
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
 	font-size: 26px;
+}
+
+.flatpickr-current-month input.cur-year {
+	font-weight: $bold;
 }
 
 .flatpickr-day {
 	font-size: 18px;
+
+	&.today {
+		border-color: $white;
+
+		@include hover {
+			background-color: $white;
+			color: $black;
+		}
+	}
+
+	@include hover {
+		background-color: $white;
+		color: $black;
+	}
+
+	&.prevMonthDay,
+	&.nextMonthDay {
+		pointer-events: none;
+		opacity: 0;
+	}
+}
+
+.flatpickr-current-month .numInputWrapper {
+	width: 7ch;
+}
+
+.form-control {
+	position: relative;
 }

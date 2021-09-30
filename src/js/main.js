@@ -160,10 +160,10 @@ const main = {
 	},
 
 	initFlatpickr: () => {
-		flatpickr("#basicDate", {
+		flatpickr(".basicDate", {
 			altInput: true,
 			altFormat: "F j, Y",
-			dateFormat: "Y-m-d"
+			dateFormat: "Y-m-d",
 		});
 	}
 };
