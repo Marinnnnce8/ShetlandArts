@@ -8,6 +8,7 @@
 	z-index: 1001;
 	overflow-x: hidden;
 	overflow-y: auto;
+	background-color: transparent;
 
 	&::before {
 		background: $black;
@@ -24,7 +25,7 @@
 
 	.uk-preserve,
 	.menu-logo {
-		z-index: 0;
+		z-index: -1;
 		pointer-events: none;
 	}
 
@@ -118,6 +119,8 @@
 	}
 
 	&[aria-hidden='false'] {
+		animation: backgroundIn .8s forwards;
+
 		.uk-preserve,
 		.menu-logo,
 		.nav-top,
@@ -136,6 +139,9 @@
 	}
 
 	&[aria-hidden='true'] {
+		background-color: $black;
+		animation: backgroundOut forwards;
+
 		.uk-preserve,
 		.menu-logo,
 		.nav-top,
@@ -321,5 +327,25 @@
 
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes backgroundIn {
+	0% {
+		background-color: transparent;
+	}
+
+	100% {
+		background-color: $black;
+	}
+}
+
+@keyframes backgroundOut {
+	0% {
+		background-color: $black;
+	}
+
+	100% {
+		background-color: transparent;
 	}
 }
