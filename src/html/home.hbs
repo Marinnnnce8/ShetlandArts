@@ -2,7 +2,7 @@
 	{{#*inline "main"}}
 
 	<div class="welcome uk-section">
-		<div class="uk-container uk-container-small">
+		<div class="uk-container uk-container-small" data-uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -50; repeat: true">
 			<p class="uk-h3 uk-text-uppercase">Firing Imaginations</p>
 			<h2 class="uk-h1 uk-text-uppercase uk-margin-remove-top">Welcome to the UK’s most northerly cultural hub</h2>
 		</div>
@@ -10,7 +10,7 @@
 
 	{{>events}}
 
-	{{#> ukSection heading="HIGHLIGHTS" sectionClass="highlights" headingClass="uk-h1" size="large"}}
+	{{#> ukSection heading="HIGHLIGHTS" sectionClass="highlights" headingClass="uk-h1" size="large" ukScrollspy="cls: uk-animation-fade; target: .uk-grid>div; delay: 350; repeat: true"}}
 		{{#*inline "out"}}
 
 		{{> nbItems gridClass="uk-hidden@m uk-child-width-1-2@s uk-margin-xlarge-bottom uk-grid-match uk-flex-center nb-items-container highlights-mob" items=items.highlightsTop}}

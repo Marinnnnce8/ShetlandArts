@@ -1,11 +1,11 @@
-<section class="about uk-overflow-hidden">
+<section class="about uk-overflow-hidden" data-uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
 	<div class="uk-container uk-container-xlarge">
 		<div class="about-box uk-position-relative">
 			<div class="uk-container uk-container-large">
 				<img class="uk-preserve" src="./img/boat-about.svg" data-uk-svg alt="Shetland Arts Logo">
 				{{#> ukGrid class="uk-child-width-1-2@m uk-position-relative"}}
 				{{#*inline "cells"}}
-				<div>
+				<div data-uk-scrollspy="cls: uk-animation-fade; offset: -30; delay: 375; repeat: true">
 					<div class="uk-h3 uk-text-uppercase">What we do</div>
 					<h2 class="uk-h1 uk-margin-remove-top">An explanation about Shetland Arts and what support it
 						provides to the community –
@@ -13,7 +13,7 @@
 						more friendly and lighter tone.</h2>
 					{{> ukButton class="uk-visible@m" label=cta style="secondary" size="large" icon="arrow-right"}}
 				</div>
-				<div>
+				<div data-uk-scrollspy="cls: uk-animation-fade; delay: 350; target: .uk-grid>div; repeat: true">
 					{{#> ukGrid class="uk-grid-small uk-child-width-1-2"}}
 					{{#*inline "cells"}}
 					<div>

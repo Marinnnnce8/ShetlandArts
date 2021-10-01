@@ -408,9 +408,9 @@
 
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" data-uk-scrollspy="cls: uk-animation-fade;delay: 250; repeat: true">
 			<div class="uk-container uk-container-xlarge">
-				<div class="footer-top">
+				<div class="footer-top" data-uk-scrollspy="cls: uk-animation-fade;target: .uk-h3; delay: 300; repeat: true">
 					<div class="uk-container uk-container-large">
 						<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
 							{{#each footerTopLinks}}
@@ -424,7 +424,7 @@
 					</div>
 				</div>
 
-				<div class="footer-middle">
+				<div class="footer-middle" data-uk-scrollspy="cls: uk-animation-fade;delay: 300; repeat: true">
 					<div class="uk-container uk-container-large">
 						<div class="uk-flex">
 							<div class="footer-brand uk-visible@l">
@@ -485,13 +485,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom">
+			<div class="footer-bottom" data-uk-scrollspy="cls: uk-animation-fade;delay: 250; repeat: true">
 				<div class="uk-container uk-container-xlarge">
 					<div class="uk-flex uk-flex-middle uk-flex-between uk-flex-wrap uk-position-relative">
 						<div class="uk-flex uk-flex-middle uk-flex-wrap">
-							<div class="copyright uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom">&copy; {{year}} {{nb.clientName}}</div>
+							<div class="copyright uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom" data-uk-scrollspy="cls: uk-animation-fade; repeat: true">&copy; {{year}} {{nb.clientName}}</div>
 							<div class="legal uk-flex uk-flex-middle">
-								<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap uk-margin-remove-bottom">
+								<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap uk-margin-remove-bottom" data-uk-scrollspy="cls: uk-animation-fade;target: >li; delay: 150; repeat: true">
 								{{#each legal}}
 									<li class="uk-margin-remove-top uk-flex uk-flex-middle uk-margin-bottom">
 										<a href="#" class="uk-text-bold uk-text-uppercase uk-text-meta">{{this}}</a>
@@ -499,11 +499,11 @@
 								{{/each}}
 								</ul>
 							</div>
-							<div class="watermark uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom">
+							<div class="watermark uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom" data-uk-scrollspy="cls: uk-animation-fade;delay: 800; repeat: true">
 								Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
 							</div>						
 						</div>
-						<a href="#" data-uk-totop data-uk-scroll class="uk-button uk-button-primary uk-button-large">
+						<a href="#" data-uk-totop data-uk-scroll class="uk-button uk-button-primary uk-button-large" data-uk-scrollspy="cls: uk-animation-fade;delay: 950; repeat: true">
 							Back to the top
 							{{> renderIcon name="arrow-up"}}
 						</a>

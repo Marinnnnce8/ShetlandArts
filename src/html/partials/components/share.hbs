@@ -1,8 +1,8 @@
-<div class="share uk-position-relative uk-position-z-index {{#if sticky}} uk-text-right{{else}} uk-text-center{{/if}}{{#if class}} {{class}}{{/if}}">
+<div class="share uk-position-relative uk-position-z-index {{#if sticky}} uk-text-right{{else}} uk-text-center{{/if}}{{#if class}} {{class}}{{/if}}" data-uk-scrollspy="cls: uk-animation-fade; repeat: true">
 	{{#if page.share.title}}
 		<p class="uk-text-small uk-text-bold uk-text-uppercase uk-text-secondary">{{page.share.title}}</p>
 	{{/if}}
-    <ul class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-list">
+    <ul class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-list" data-uk-scrollspy="cls: uk-animation-fade;target: >li; delay: 250; repeat: true">
 		{{#each page.share.items}}
 			{{#with this}}    
 			<li class="uk-margin-remove-top">
@@ -14,6 +14,6 @@
 		{{/each}}
     </ul>
 	{{#if sticky}}
-	{{> ukButton label="Back to Blog" size="small" class="uk-width-1-1"}}
+	{{> ukButton label="Back to Blog" size="small" class="uk-width-1-1" ukScrollspy="cls: uk-animation-fade; delay: 1000;"}}
 	{{/if}}
 </div>

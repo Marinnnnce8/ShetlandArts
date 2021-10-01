@@ -9,7 +9,7 @@
 
 {{#> content size="large"}}
 	{{#*inline "body"}}
-	<figure class="align_center hidpi">
+	<figure class="align_center hidpi" data-uk-scrollspy="cls: uk-animation-fade;delay: 300; repeat: true">
 		<a href="{{aws}}/img/placeholder-castle-banner.jpg">
 			<img alt="This is a centre aligned image" src="./img/image-center.png" width="1200" height="460"/>
 		</a>
@@ -24,7 +24,7 @@
 
 	<h2>Heading h2</h2>
 
-	<figure class="align_right hidpi">
+	<figure class="align_right hidpi" data-uk-scrollspy="cls: uk-animation-fade;delay: 250; repeat: true">
 		<a href="{{aws}}/img/placeholder-columns.jpg">
 			<img alt="This is a right aligned image" src="./img/image-right.png" width="373" height="250"/>
 		</a>
@@ -35,7 +35,7 @@
 
 	<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vestibulum sodales porttitor. Donec a luctus nisi. Donec facilisis, elit vitae blandit accumsan, orci odio ornare libero, sed mollis urna magna nec mi.</p>
 
-	<figure class="align_left hidpi">
+	<figure class="align_left hidpi" data-uk-scrollspy="cls: uk-animation-fade;delay: 500; repeat: true">
 		<a href="{{aws}}/img/placeholder-city.jpg">
 			<img alt="This is a left aligned image" src="./img/image-left.png" width="373" height="250"/>
 		</a>
@@ -156,13 +156,13 @@
 
 	<h2>Messages</h2>
 
-	<p class="uk-alert uk-alert-primary"><strong>Primary Text.</strong> This text is a message to the website user</p>
+	<p class="uk-alert uk-alert-primary" data-uk-scrollspy="cls: uk-animation-fade;delay: 200; repeat: true"><strong>Primary Text.</strong> This text is a message to the website user</p>
 
-	<p class="uk-alert uk-alert-success"><strong>Success Text.</strong> This text is providing a positive message to the user</p>
+	<p class="uk-alert uk-alert-success" data-uk-scrollspy="cls: uk-animation-fade;delay: 400; repeat: true"><strong>Success Text.</strong> This text is providing a positive message to the user</p>
 
-	<p class="uk-alert uk-alert-warning"><strong>Warning Text.</strong> The text is providing a gentle warning to the user</p>
+	<p class="uk-alert uk-alert-warning" data-uk-scrollspy="cls: uk-animation-fade;delay: 600; repeat: true"><strong>Warning Text.</strong> The text is providing a gentle warning to the user</p>
 
-	<p class="uk-alert uk-alert-danger"><strong>Danger Text.</strong> The text is providing an error alert to the user</p>
+	<p class="uk-alert uk-alert-danger" data-uk-scrollspy="cls: uk-animation-fade;delay: 800; repeat: true"><strong>Danger Text.</strong> The text is providing an error alert to the user</p>
 
 	{{> lightbox items=items.lightbox title="Embedded Videos"}}
 
@@ -256,13 +256,13 @@
 	{{/inline}}
 {{/nbForm}}
 
-{{#> ukSection heading="Related Posts" size="large" headingClass="uk-text-center uk-margin-medium-bottom"}}
+{{#> ukSection heading="Related Posts" size="large" headingClass="uk-text-center uk-margin-medium-bottom" ukScrollspy="cls: uk-animation-fade; target: .uk-grid>div; delay: 350;"}}
 	{{#*inline "out"}}
 	{{> nbItems items=items.posts}}
 	{{/inline}}
 {{/ukSection}}
 
-{{#> ukSection heading="Related Pages" size="large" headingClass="uk-text-center uk-margin-medium-bottom"}}
+{{#> ukSection heading="Related Pages" size="large" headingClass="uk-text-center uk-margin-medium-bottom" ukScrollspy="cls: uk-animation-fade; target: .uk-grid>div; delay: 350;"}}
 	{{#*inline "out"}}
 	{{> nbItems items=items.pages}}
 	{{/inline}}
