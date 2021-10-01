@@ -14,4 +14,10 @@
 			width: 216px;
 		}
 	}
+
+	@media (max-width: $breakpoint-medium-max) {
+		.uk-logo {
+			padding-top: 17px;
+		}
+	}
 }

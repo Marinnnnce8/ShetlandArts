@@ -38,6 +38,7 @@
 	}
 
 	.open-today {
+		z-index: 1025;
 		text-transform: none;
 		padding-right: 22px;
 		background-color: transparent;
@@ -86,6 +87,10 @@
 		}
 	}
 
+	.uk-list .uk-button:not(.button-search) {
+		z-index: 1030;
+	}
+
 	@media (min-width: $breakpoint-medium) {
 		margin-bottom: 26px;
 
@@ -117,10 +122,6 @@
 
 			>span {
 				color: $white;
-			}
-
-			svg {
-				margin-bottom: 5px;
 			}
 		}
 

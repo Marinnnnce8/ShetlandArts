@@ -2,24 +2,6 @@
 	padding-right: 0;
 }
 
-// .mm-btn::after {
-// 	width: 7px;
-// 	height: 7px;
-// }
-
-// .mm-btn_next::after {
-// 	right: 13px;
-// }
-
-// .mm-btn_prev {
-// 	width: 30px;
-// 	padding-right: 30px;
-
-// 	&::before {
-// 		left: 13px;
-// 	}
-// }
-
 .mmenu-bg {
 	background: $black;
 	position: absolute;
@@ -54,10 +36,6 @@ html:not(.show-menu) .mmenu-overlay {
 
 .mm-menu {
 	z-index: 1;
-
-	// >.mm-navbars_top {
-	// 	display: none;
-	// }
 }
 
 .mmenu-overlay {
@@ -66,11 +44,10 @@ html:not(.show-menu) .mmenu-overlay {
 	left: 0;
 	right: 0;
 	height: 100vh;
-	z-index: 1000;
+    z-index: 1000;
 	overflow: hidden !important;
 	transition: background-color .3s;
 }
-
 
 .mm-navbar,
 .mm-listview>li {
@@ -88,7 +65,6 @@ html:not(.show-menu) .mmenu-overlay {
 	transition: color .3s;
 }
 
-/* Mmenu overwrites */
 .mm-btn_prev {
 	&::before {
 		width: 12px;
@@ -271,6 +247,10 @@ html:not(.show-menu) .mmenu-overlay {
 
 	.mm-navbar {
 		transition-delay: .5s !important;
+	}
+
+	.open-today {
+		color: $white;
 	}
 }
 

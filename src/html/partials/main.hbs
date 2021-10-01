@@ -99,62 +99,6 @@
 							{{> renderNavigation items=menu active=page.name}}
 							<button class="uk-button button-toggle" aria-label="Open Navigation"><span class="uk-position-center" role="presentation"></span></button>
 							<div class="uk-width-1-1 mega-menu" id="megamenu" aria-hidden="true" hidden>
-								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
-									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
-									<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1 open-today-menu">
-										<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
-											<div>
-												<ul class="uk-list">
-													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Mareel</span> Opening Hours</li>
-													<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
-													<li class="uk-text-small uk-margin-bottom">Building hours: 10am - 10pm (or when last film is coming out)</li>
-													<li class="uk-text-small uk-text-bold">Cafe hours:</li>
-													<li class="uk-text-small">Wed, Thu, Sun: 10am - 8pm</li>
-													<li class="uk-text-small">Fri, Sat:  10am - 11pm</li>
-												</ul>
-											</div>
-											<div>
-												<ul class="uk-list">
-													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">Bonhoga</span> Opening Hours</li>
-													<li class="uk-text-small uk-text-bold">Wednesday to Sunday</li>
-													<li class="uk-text-small uk-margin-bottom">10.30am - 4.30pm</li>
-												</ul>
-											</div>
-											<div>
-												<ul class="uk-list">
-													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Garrison</span> Opening Hours</li>
-													<li class="uk-text-small">Various throughout the year - check out our listings for more information.</li>
-												</ul>
-											</div>
-											<div>
-												<ul class="uk-list">
-													<li class="uk-h5 uk-text-uppercase"><span class="uk-text-primary">The Booth</span> Opening Hours</li>
-													<li class="uk-text-small">Private hire only</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
-										<li>
-											<a class="uk-button uk-button-small" href="#">
-												{{>renderIcon class="uk-margin-small-right" name='letter'}}
-												Contact
-											</a>
-										</li>
-										<li class="uk-margin-remove-top">
-											<a class="uk-button uk-button-small" href="#">
-												{{>renderIcon class="uk-margin-small-right" name='donate'}}
-												Donate
-											</a>
-										</li>
-										<li class="uk-margin-remove-top">
-											<a class="uk-button uk-button-small" href="#">
-												{{>renderIcon class="uk-margin-small-right" name='tickets'}}
-												Book Online
-											</a>
-										</li>
-									</ul>
-								</div>								
 								<button class="uk-button button-toggle nb-menu-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
 								<div class="uk-flex-wrap nb-menu-body" data-uk-grid="masonry: true">
 									<div>
@@ -281,7 +225,7 @@
 								</li>				
 							</ul>
 							<div class="uk-flex uk-flex-right">
-								<button class="uk-button uk-button-small open-today uk-margin-small-bottom" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
+								<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">Open Today{{>renderIcon name='caret-down'}}{{>renderIcon name='clock' class="uk-margin-small-left"}}</button>
 								<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -78" class="uk-width-1-1 open-today-menu">
 									<div class="uk-grid uk-child-width-1-4@m" data-uk-grid>
 										<div>

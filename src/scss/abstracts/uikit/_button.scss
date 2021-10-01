@@ -55,8 +55,6 @@
 	}
 
 	@include hover {
-		// background-color: transparent !important;
-
 		&::before {
 			bottom: 0;
 			top: auto;
@@ -152,12 +150,12 @@
 
 .button-search {
 	background-color: $white;
-	width: 44px;
-	height: 44px;
+	width: 56px;
+	height: 56px;
 	border: 0;
 	padding: 0;
-	z-index: 1026;
-	transition: 0;
+	z-index: 1000;
+	transition: none;
 
 	&::before,
 	&::after {
@@ -193,6 +191,7 @@
 		border-radius: 50%;
 		background-color: $grey-dark;
 		position: absolute;
+		z-index: 1026;
 
 		svg {
 			opacity: 0;

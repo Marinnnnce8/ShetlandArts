@@ -33,6 +33,7 @@
 
 @mixin hook-search-default-input {
 	border: 3px solid rgba($white, .25);
+	color: $white;
 
 	&::placeholder {
 		font-weight: $medium;
@@ -45,6 +46,7 @@
 		border-right: 0;
 		border-top: 0;
 		border-bottom: 2px solid $black;
+		color: $black;
 
 		&::placeholder {
 			font-size: 20px;
