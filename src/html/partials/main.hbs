@@ -378,7 +378,7 @@
 			</nav>
 		</header>
 
-		<main class="uk-margin-bottom">
+		<main class="uk-margin-bottom" id="main">
 
 			{{#if page.banner}}
 				{{> banner}}
@@ -392,7 +392,7 @@
 				{{> sliderBanner}}
 			{{else}}
 				{{#if page.styleguide}}
-					<div class="share-sticky uk-flex uk-flex-right uk-visible@l" data-uk-sticky="offset: 100">
+					<div class="share-sticky uk-flex uk-flex-right uk-visible@l" data-uk-sticky="offset: 174;bottom: #main">
 						{{>share sticky="true"}}
 					</div>
 				{{/if}}

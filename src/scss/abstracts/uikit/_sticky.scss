@@ -2,6 +2,7 @@
 	&.share-sticky {
 		right: 50px;
 		position: absolute;
+		z-index: 979;
 		max-width: 200px !important;
 
 		.share {
