@@ -1,4 +1,6 @@
 @mixin hook-modal {
+	background: $black;
+
 	a {
 		color: $white;
 
@@ -7,11 +9,10 @@
 		}
 	}
 
-	li {
+	.uk-modal-body li {
 		opacity: 0;
 		transition: transform .3s .3s, opacity .3s;
 		transform: translateY(1rem);
-		letter-spacing: .015rem;
 
 		&:not(.uk-modal-title) a {
 			font-size: 16px;
@@ -38,18 +39,18 @@
 .uk-modal {
 	padding: 5px 50px 25px;
 
-	.modal-bg {
-		background: $black;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transform-origin: 0 0;
-		transform: scaleY(0);
-		transition: transform .6s cubic-bezier(.77, 0, .175, 1);
-		z-index: -2;
-	}
+	// .modal-bg {
+	// 	background: $black;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	transform-origin: 0 0;
+	// 	transform: scaleY(0);
+	// 	transition: transform .6s cubic-bezier(.77, 0, .175, 1);
+	// 	z-index: -2;
+	// }
 }
 
 @mixin hook-modal-body {
@@ -73,7 +74,7 @@
 		transform: scaleY(1);
 	}
 
-	ul {
+	.uk-modal-body {
 		li {
 			opacity: 1;
 			transition: transform .3s .3s, opacity .3s;

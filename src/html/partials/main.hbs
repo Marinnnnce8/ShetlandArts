@@ -73,7 +73,6 @@
 										</ul>
 									</div>
 								</div>
-								<div class="dropdown-bg" role="presentation"></div>
 							</div>
 							<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 								<li>
@@ -98,8 +97,8 @@
 						</div>
 						<div class="uk-flex uk-flex-middle">
 							{{> renderNavigation items=menu active=page.name}}
-							<a href="#megamenu" class="uk-button button-toggle" aria-label="Open Navigation" data-uk-toggle><span class="uk-position-center" role="presentation"></span></a>
-							<div data-uk-modal class="uk-width-1-1 mega-menu" id="megamenu">
+							<button class="uk-button button-toggle" aria-label="Open Navigation"><span class="uk-position-center" role="presentation"></span></button>
+							<div class="uk-width-1-1 mega-menu" id="megamenu" aria-hidden="true" hidden>
 								<div class="uk-flex uk-flex-middle uk-flex-right nav-top uk-margin-medium-bottom">
 									<button class="uk-button uk-button-small open-today" aria-label="Check what's open today">{{>renderIcon name='clock' class="uk-margin-small-right"}}Open Today{{>renderIcon name='caret-down'}}</button>
 									<div data-uk-dropdown="mode: click; boundary: .header; boundary-align: true; offset: -144" class="uk-width-1-1 open-today-menu">
@@ -134,7 +133,6 @@
 												</ul>
 											</div>
 										</div>
-										<div class="dropdown-bg" role="presentation"></div>
 									</div>
 									<ul class="uk-list uk-flex uk-flex-middle uk-margin-remove-top uk-margin-remove-bottom">
 										<li>
@@ -157,11 +155,11 @@
 										</li>
 									</ul>
 								</div>								
-								<button data-uk-close class="uk-button button-toggle uk-modal-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
-								<div class="uk-flex-wrap uk-modal-body" data-uk-grid="masonry: true">
+								<button class="uk-button button-toggle nb-menu-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
+								<div class="uk-flex-wrap nb-menu-body" data-uk-grid="masonry: true">
 									<div>
 										<ul class="uk-list uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">What’s on</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">What’s on</a></li>
 											<li><a href="#">Today</a></li>
 											<li><a href="#">This Week</a></li>
 											<li><a href="#">This Weekend</a></li>
@@ -179,7 +177,7 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Visit Us</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Visit Us</a></li>
 											<li><a href="#">Bonhoga</a></li>
 											<li><a href="#">The Garrison</a></li>
 											<li><a href="#">Mareel</a></li>
@@ -191,13 +189,13 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Projects</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Projects</a></li>
 											<li><a href="#">Past projects</a></li>
 										</ul>
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Festivals</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Festivals</a></li>
 											<li><a href="#">Screenplay</a></li>
 											<li><a href="#">Wordplay</a></li>
 											<li><a href="#">Artists Information</a></li>
@@ -205,13 +203,13 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Exhibitions</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Exhibitions</a></li>
 											<li><a href="#">Past Exhibitions</a></li>
 										</ul>
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Learn</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Learn</a></li>
 											<li><a href="#">Study with us</a></li>
 											<li><a href="#">Youth Arts</a></li>
 											<li><a href="#">Wellbeing arts</a></li>
@@ -221,7 +219,7 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Hire</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Hire</a></li>
 											<li><a href="#">Meetings and conferences</a></li>
 											<li><a href="#">Weddings and partnerships</a></li>
 											<li><a href="#">Event hire</a></li>
@@ -231,7 +229,7 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">About</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">About</a></li>
 											<li><a href="#">People</a></li>
 											<li><a href="#">Media centre</a></li>
 											<li><a href="#">Governance</a></li>
@@ -239,7 +237,7 @@
 									</div>
 									<div>
 										<ul class="uk-list uk-margin-remove-top uk-margin-medium-bottom">
-											<li class="uk-text-bold uk-text-uppercase uk-modal-title"><a href="#">Opportunities</a></li>
+											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">Opportunities</a></li>
 											<li><a href="#">Jobs</a></li>
 											<li><a href="#">Volunteer</a></li>
 											<li><a href="#">Commissions</a></li>
@@ -250,7 +248,7 @@
 								</div>
 								<img class="uk-preserve uk-position-bottom-right" src="./img/boat-menu.svg" data-uk-svg alt="Shetland Arts Boat Logo">
 								<img class="menu-logo" src="./img/logo-menu.png" loading="lazy" width="291" height="40" alt="Shetland Arts Logo">
-								<div class="modal-bg" role="presentation"></div>
+								{{!-- <div class="menu-bg" role="presentation"></div> --}}
 							</div>
 							<div class="uk-visible@m">
 								<form class="uk-search uk-search-default">
@@ -316,7 +314,6 @@
 											</ul>
 										</div>
 									</div>
-									<div class="dropdown-bg" role="presentation"></div>
 								</div>
 							</div>
 							<div class="uk-flex uk-flex-right uk-flex-middle">
@@ -358,14 +355,12 @@
 													</ul>
 												</div>
 											</div>
-											<div class="dropdown-bg" role="presentation"></div>
 										</div>
 									</div>									
 									<form class="uk-search uk-search-default uk-margin-left">
 										<span class="uk-search-icon-flip" data-uk-search-icon></span>
 										<input class="uk-search-input uk-border-pill" type="search" placeholder="Search...">
 									</form>		
-									<div class="dropdown-bg" role="presentation"></div>															
 								</div>
 								<a href="#" class="uk-navbar-toggle uk-position-relative uk-margin-small-left" aria-label="Toggle Navigation" data-uk-toggle="target: #mmenu;cls: menu-hidden;">
 									<span class="uk-position-center" role="presentation"></span>

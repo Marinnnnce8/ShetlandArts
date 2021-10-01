@@ -49,13 +49,9 @@ const main = {
 			});
 		}
 
+		main.toggleMegamenu();
+
 		main.mmenu();
-
-		main.modalDropdown();
-
-		main.openDropdown();
-
-		main.openSearch();
 
 		main.initFlatpickr();
 
@@ -110,53 +106,27 @@ const main = {
 		}
 	},
 
-	modalDropdown: () => {
+	//nav toggle
+	toggleMegamenu: () => {
+		const navToggleButton = document.querySelectorAll('.button-toggle');
 
-		const el = uk.$('#megamenu');
-		const html = uk.$("html");
-		if (!el) return;
+		for (let i = 0; i < navToggleButton.length; i++) {
 
-
-		uk.on(el, 'shown', () => {
-			uk.addClass(html, 'html-modal-active');
-		})
-
-		// uk.on(el, 'hide', () => {
-		// 	setTimeout(function () {
-		// 		uk.addClass(html, 'uk-modal-page');
-		// 	}, 2000);
-		// })
-
-		// uk.on(el, 'hidden', () => {
-		// 	setTimeout(function () {
-		// 		// uk.removeClass(html, 'uk-modal-page');
-		// 		uk.removeClass(html, 'html-modal-active');
-		// 	}, 3000);
-		// })
-	},
-
-	openDropdown: () => {
-
-		const el = uk.$('.open-today-menu');
-		const html = uk.$("html");
-		if (!el) return;
-
-
-		uk.on(el, 'shown', () => {
-			uk.addClass(html, 'html-dropdown-active');
-		})
-	},
-
-	openSearch: () => {
-
-		const el = uk.$('.search-menu');
-		const html = uk.$("html");
-		if (!el) return;
-
-
-		uk.on(el, 'shown', () => {
-			uk.addClass(html, 'html-search-active');
-		})
+			navToggleButton[i].addEventListener('click', () => {
+				const nav = document.getElementById('megamenu');
+				if (nav.getAttribute('aria-hidden') === 'false') {
+					document.querySelector('html').classList.remove('html-menu-active');
+					nav.setAttribute('aria-hidden', 'true');
+					setTimeout(() => {
+						nav.setAttribute('hidden', true);
+					}, 850);
+				} else {
+					document.querySelector('html').classList.add('html-menu-active');
+					nav.removeAttribute('hidden');
+					nav.setAttribute('aria-hidden', 'false');
+				}
+			}, false);
+		}
 	},
 
 	initFlatpickr: () => {
