@@ -10,7 +10,28 @@
 	.lightbox,
 	.uk-modal,
 	.share,
+	.image-box,
+	.events,
+	.about-box .uk-preserve,
+	.about-box .uk-grid>div:last-of-type,
+	.uk-card-media-top,
 	.nb-form {
 		display: none !important;
+	}
+
+	.uk-text-primary {
+		color: $black !important;
+	}
+
+	.uk-slider-items>li {
+		height: auto !important;
+	}
+
+	.about-box .uk-child-width-1-2\@m>* {
+		width: 100% !important;
+	}
+
+	*[data-uk-scrollspy] {
+		visibility: visible !important;
 	}
 }
