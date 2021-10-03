@@ -111,6 +111,12 @@
 	}
 
 	@media (max-width: $breakpoint-small-max) {
+
+		>.uk-flex>.uk-list,
+		>.uk-flex>.uk-flex-middle {
+			padding-right: 6px;
+		}
+
 		ul .uk-button {
 			z-index: 1031;
 		}
@@ -130,6 +136,7 @@
 			padding-bottom: 13px;
 			border-top-left-radius: 25px;
 			border-top-right-radius: 25px;
+			padding-left: 10px;
 			z-index: 1025;
 			overflow: visible;
 

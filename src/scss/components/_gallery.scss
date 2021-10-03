@@ -11,7 +11,7 @@
 	}
 
 	&-image {
-		border: 10px solid transparent;
+		border: 2px solid transparent;
 		display: table-cell;
 		margin: 0;
 		outline: none;
@@ -32,5 +32,15 @@
 
 	.uk-container-expand & {
 		margin: 0 2px;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		&-wrap {
+			margin: 0 -10px;
+		}
+
+		&-image {
+			border: 10px solid transparent;
+		}
 	}
 }

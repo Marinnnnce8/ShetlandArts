@@ -2,6 +2,7 @@
 	padding-top: 100px;
 
 	.calendar-button {
+		z-index: 3;
 
 		* {
 			color: $primary;
@@ -21,16 +22,29 @@
 			width: 34px;
 		}
 
-		.input {
+		.basicDate {
 			width: 113px;
 			border: 2px solid $primary;
 			background-color: $white;
-			color: $primary;
+			color: transparent;
 			padding: 16px 35px;
 			border-radius: 34px;
 			transition: $transition;
 			min-height: 62px;
+			height: 62px;
 			outline: none;
+
+			&::placeholder,
+			&::-webkit-calendar-picker-indicator {
+				opacity: 0;
+				-webkit-appearance: none;
+			}
+
+			>*:not(svg) {
+				opacity: 0;
+				-webkit-appearance: none;
+				font-size: 0;
+			}
 
 			&.active {
 				border-color: $primary;
@@ -93,6 +107,7 @@
 		padding: 16px 35px;
 
 		@include hover {
+			border-color: $white;
 			background-color: $primary;
 			color: $white;
 		}
@@ -146,8 +161,8 @@
 
 		&::before {
 			position: absolute;
-			left: 30px;
-			width: calc(100% - 60px);
+			left: 32px;
+			width: calc(100% - 64px);
 			height: 22px;
 			background-color: $primary;
 			content: '';
@@ -189,6 +204,12 @@
 	@media (max-width: $breakpoint-small-max) {
 		>.uk-container>.uk-flex {
 			flex-direction: column;
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		.uk-h1 {
+			max-width: 340px;
 		}
 	}
 }

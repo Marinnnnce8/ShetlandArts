@@ -25,9 +25,12 @@
 
 			svg {
 				color: $white;
-
 			}
 		}
+	}
+
+	@media (max-width: 374px) {
+		max-width: 215px;
 	}
 }
 
@@ -70,4 +73,3 @@
 		border-bottom: 2px solid rgba($black, .5);
 	}
 }
-
