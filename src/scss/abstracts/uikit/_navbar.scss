@@ -26,6 +26,12 @@
 	}
 }
 
+@mixin hook-navbar-dropdown-nav-item {
+	font-weight: $bold;
+	transition: $transition;
+	text-transform: none;
+}
+
 .button-toggle,
 .uk-navbar-toggle {
 	background-color: transparent;
