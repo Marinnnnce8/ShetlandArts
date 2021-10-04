@@ -1,8 +1,8 @@
-<div class="share uk-position-relative uk-position-z-index {{#if sticky}} uk-text-right{{else}} uk-text-center{{/if}}{{#if class}} {{class}}{{/if}}" data-uk-scrollspy="cls: uk-animation-fade; repeat: true">
+<div class="share uk-position-relative uk-position-z-index {{#if sticky}} uk-text-right{{else}} uk-text-center{{/if}}{{#if class}} {{class}}{{/if}}" data-uk-scrollspy="cls: uk-animation-fade">
 	{{#if page.share.title}}
 		<p class="uk-text-small uk-text-bold uk-text-uppercase uk-text-secondary">{{page.share.title}}</p>
 	{{/if}}
-    <ul class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-list" data-uk-scrollspy="cls: uk-animation-fade;target: >li; delay: 250; repeat: true">
+    <ul class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-list" data-uk-scrollspy="cls: uk-animation-fade;target: >li; delay: 250">
 		{{#each page.share.items}}
 			{{#with this}}    
 			<li class="uk-margin-remove-top">

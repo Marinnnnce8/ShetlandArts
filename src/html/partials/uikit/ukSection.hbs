@@ -1,7 +1,7 @@
 <section class="uk-section{{#if sectionClass}} {{sectionClass}}{{/if}}" id="{{#if id}}{{ida id}}{{else}}section-{{page.name}}{{/if}}"{{#if ukScrollspy}} data-uk-scrollspy="{{ukScrollspy}}"{{/if}}>
 	{{#> ukContainer size=(default size ukContainer) class=(default class "")}}
 		{{#*inline "out"}}
-		<h2 class="{{#if headingClass}}{{headingClass}}{{/if}}" data-uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">{{heading}}</h2>
+		<h2 class="{{#if headingClass}}{{headingClass}}{{/if}}" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">{{heading}}</h2>
 		{{#> out id="" class="" heading="" size=""}}{{/out}}
 		{{/inline}}
 	{{/ukContainer}}
