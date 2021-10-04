@@ -100,7 +100,7 @@
 							<button class="uk-button button-toggle" aria-label="Open Navigation"><span class="uk-position-center" role="presentation"></span></button>
 							<div class="uk-width-1-1 mega-menu" id="megamenu" aria-hidden="true" hidden>
 								<button class="uk-button button-toggle nb-menu-close" aria-label="Close menu"><span class="uk-position-center" role="presentation"></span></button>
-								<div class="uk-flex-wrap nb-menu-body" data-uk-grid="masonry: true">
+								<div class="uk-flex-wrap nb-menu-body uk-flex">
 									<div>
 										<ul class="uk-list uk-margin-medium-bottom">
 											<li class="uk-text-bold uk-text-uppercase nb-menu-title"><a href="#">What’s on</a></li>
@@ -423,13 +423,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom" data-uk-scrollspy="cls: uk-animation-fade;delay: 250; repeat: true">
+			<div class="footer-bottom">
 				<div class="uk-container uk-container-xlarge">
 					<div class="uk-flex uk-flex-middle uk-flex-between uk-flex-wrap uk-position-relative">
 						<div class="uk-flex uk-flex-middle uk-flex-wrap">
-							<div class="copyright uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom" data-uk-scrollspy="cls: uk-animation-fade; repeat: true">&copy; {{year}} {{nb.clientName}}</div>
+							<div class="copyright uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom">&copy; {{year}} {{nb.clientName}}</div>
 							<div class="legal uk-flex uk-flex-middle">
-								<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap uk-margin-remove-bottom" data-uk-scrollspy="cls: uk-animation-fade;target: >li; delay: 150; repeat: true">
+								<ul class="uk-list uk-flex uk-flex-middle uk-flex-wrap uk-margin-remove-bottom">
 								{{#each legal}}
 									<li class="uk-margin-remove-top uk-flex uk-flex-middle uk-margin-bottom">
 										<a href="#" class="uk-text-bold uk-text-uppercase uk-text-meta">{{this}}</a>
@@ -437,11 +437,11 @@
 								{{/each}}
 								</ul>
 							</div>
-							<div class="watermark uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom" data-uk-scrollspy="cls: uk-animation-fade;delay: 800; repeat: true">
+							<div class="watermark uk-text-bold uk-text-uppercase uk-text-meta uk-margin-bottom">
 								Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" width="16" height="16" loading="lazy"></a>
 							</div>						
 						</div>
-						<a href="#" data-uk-totop data-uk-scroll class="uk-button uk-button-primary uk-button-large" data-uk-scrollspy="cls: uk-animation-fade;delay: 950; repeat: true">
+						<a href="#" data-uk-totop data-uk-scroll class="uk-button uk-button-primary uk-button-large">
 							Back to the top
 							{{> renderIcon name="arrow-up"}}
 						</a>
