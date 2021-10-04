@@ -233,18 +233,6 @@
 		>div {
 			max-height: 100%;
 			height: 100%;
-
-			@include hover {
-				.uk-button-secondary {
-					background-color: transparent;
-
-					&::before {
-						bottom: 0;
-						top: auto;
-						height: 100%;
-					}
-				}
-			}
 		}
 	}
 
