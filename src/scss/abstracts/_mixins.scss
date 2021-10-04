@@ -50,6 +50,38 @@
 	}
 }
 
+//Button hover
+@mixin button-pseudo-elements {
+	&::before {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 0;
+		width: 100%;
+		z-index: -1;
+		content: '';
+		transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	}
+
+	&:link,
+	&:visited {
+		transition: 1s ease;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 0%;
+			left: 50%;
+			top: 50%;
+			width: 150%;
+			z-index: -1;
+			transition: 0.75s ease 0s;
+		}
+	}
+}
+
 
 //
 // UIkit

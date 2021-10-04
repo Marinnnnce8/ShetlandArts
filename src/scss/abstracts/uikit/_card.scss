@@ -13,6 +13,14 @@
 		color: $black;
 	}
 
+	.uk-button-secondary {
+		// @include button-pseudo-elements;
+
+		&::before {
+			background-color: $primary;
+		}
+	}
+
 	@include hover {
 
 		.uk-card-media-top {
@@ -37,6 +45,16 @@
 					transform: scale3d(1, 1, 1);
 					opacity: 1;
 				}
+			}
+		}
+
+		.uk-button-secondary {
+			background-color: transparent;
+
+			&::before {
+				bottom: 0;
+				top: auto;
+				height: 100%;
 			}
 		}
 	}
@@ -92,7 +110,7 @@
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		z-index: 1;
+		z-index: 0;
 
 		>span {
 			position: relative;

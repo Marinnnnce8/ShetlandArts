@@ -70,6 +70,10 @@
 		}
 	}
 
+	.uk-width-1-3\@m {
+		padding-bottom: 100px;
+	}
+
 	.uk-slider-nav {
 		position: absolute;
 		z-index: 1;
@@ -129,6 +133,11 @@
 		transform-origin: center;
 	}
 
+	.button-bottom {
+		bottom: 0;
+		position: absolute;
+	}
+
 	@media (min-width: $breakpoint-medium) {
 		h1 {
 			font-size: 67px;
@@ -136,9 +145,11 @@
 		}
 
 		.button-bottom {
-			position: absolute;
 			left: 30px;
-			bottom: 0;
+		}
+
+		.uk-button-secondary {
+			padding: 28px 35px;
 		}
 
 		.media-icon {
@@ -167,6 +178,10 @@
 				width: 17px;
 			}
 		}
+
+		.uk-width-1-3\@m {
+			padding-bottom: 110px;
+		}
 	}
 
 	@media (min-width: $breakpoint-xlarge) {
@@ -176,6 +191,8 @@
 
 		.button-bottom {
 			left: 85px;
+			max-width: 360px;
+			width: 100%;
 		}
 	}
 
@@ -196,6 +213,10 @@
 		.uk-button-secondary {
 			left: -35px;
 		}
+
+		.uk-container-xlarge {
+			height: 100%;
+		}
 	}
 
 	@media (max-width: $breakpoint-xsmall-max) {
@@ -212,6 +233,18 @@
 		>div {
 			max-height: 100%;
 			height: 100%;
+
+			@include hover {
+				.uk-button-secondary {
+					background-color: transparent;
+
+					&::before {
+						bottom: 0;
+						top: auto;
+						height: 100%;
+					}
+				}
+			}
 		}
 	}
 
