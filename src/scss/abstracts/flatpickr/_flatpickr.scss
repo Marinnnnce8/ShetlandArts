@@ -50,7 +50,7 @@
 
 span.flatpickr-weekday {
 	color: $white;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 span.flatpickr-weekday,
@@ -60,7 +60,7 @@ span.flatpickr-weekday,
 
 .flatpickr-current-month .flatpickr-monthDropdown-months,
 .flatpickr-current-month input.cur-year {
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .flatpickr-current-month input.cur-year {
@@ -76,12 +76,14 @@ span.flatpickr-weekday,
 		@include hover {
 			background-color: $white;
 			color: $black;
+			border-color: $white;
 		}
 	}
 
 	@include hover {
 		background-color: $white;
 		color: $black;
+		border-color: $white;
 	}
 
 	&.prevMonthDay,
@@ -98,4 +100,31 @@ span.flatpickr-weekday,
 .form-control {
 	position: relative;
 	cursor: pointer;
+}
+
+.dayContainer {
+	padding: 15px;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+	background: $white;
+	border-color: $white;
+	color: $primary;
 }
