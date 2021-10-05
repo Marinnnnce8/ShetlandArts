@@ -249,16 +249,24 @@
 			"url": "https://twitter.com/"
 		},
 		{
-			"name": "pinterest",
-			"url": "https://pinterest.com/"
-		},
-		{
 			"name": "instagram",
 			"url": "https://instagram.com/"
 		},
 		{
 			"name": "soundcloud",
 			"url": "https://soundcloud.com/"
+		},
+		{
+			"name": "youtube",
+			"url": "https://youtube.com/"
+		},
+		{
+			"name": "flickr",
+			"url": "https://flickr.com/"
+		},
+		{
+			"name": "tumblr",
+			"url": "https://tumblr.com/"
 		}
 	],
 	"legal": [

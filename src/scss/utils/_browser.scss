@@ -1,0 +1,104 @@
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	.events .basicDate {
+		transition: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+
+		&[readonly] {
+			opacity: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
